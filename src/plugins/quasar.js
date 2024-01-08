@@ -14,7 +14,7 @@ export default {
             iconSet: quasarIconSet,
             lang: quasarLang,
             config: {
-                dark: 'auto' // or Boolean true/false
+                dark:  'auto'// or Boolean true/false
             }
         });
 

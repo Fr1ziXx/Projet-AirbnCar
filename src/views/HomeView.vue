@@ -76,7 +76,7 @@ export default {
 
 </template>
 
-<style lang="sass">
+<style lang="sass" scoped>
 .container
   background-color: $negative !important
   border-radius: 7px
@@ -85,7 +85,7 @@ export default {
   padding: 0 !important
 
 section
-  margin-top: 100vh
+  margin-top: 80px
   transform: translateY(-50%)
 
 
@@ -98,7 +98,7 @@ section
 
 
 #para-img
-  background-image: url("public/picture/test2.jpg")
+  background-image: url("../../public/picture/Fond-accueil.jpg")
   background-attachment: fixed
   background-position: center
   background-repeat: no-repeat
