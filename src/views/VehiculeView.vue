@@ -71,9 +71,9 @@ export default {
           <q-img :src="`picture/voiture/${list.img}`" no-spinner class="col-4 picture-item q-ml-md" />
         </div>
         <div class="col-8 text-contenair text-white">
-          <h4 id="titre-voiture" class="text-italic volkorn">{{ list.name }}</h4>
-          <h5 id="prix-voiture">{{ list.prix }}</h5>
-          <p id="des-voiture">{{ list.desc }}</p>
+          <h4 class="text-italic volkorn titre-voiture">{{ list.name }}</h4>
+          <h5 class="prix-voiture">{{ list.prix }}</h5>
+          <p class="des-voiture">{{ list.desc }}</p>
         </div>
       </q-card>
 
@@ -97,20 +97,22 @@ export default {
 
 .picture-item
   border-radius: 5px
+  max-width: 375px
 
 .text-contenair
-  padding-left: 50px
+  padding-left: 30px
   margin-top: -50px
   padding-right: 80px
 
-#titre-voiture
+.titre-voiture
   text-decoration: underline
 
-#prix-voiture
+.prix-voiture
   margin-top: -40px
 
-#des-voiture
+.des-voiture
   margin-top: 40px
   font-size: 1.1em
+
 
 </style>

@@ -85,7 +85,7 @@ export default {
   padding: 0 !important
 
 section
-  margin-top: 80px
+  margin-top: 850px
   transform: translateY(-50%)
 
 
