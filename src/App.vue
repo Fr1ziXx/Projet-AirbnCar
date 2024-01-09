@@ -44,9 +44,9 @@ export default {
     <q-footer elevated class="column q-pa-xl">
       <aside class="row justify-between q-pa-md">
         <q-tabs dense>
-          <q-route-tab name="vehicule" label="Vehicule" to="/vehicule" class="text-italic" />
-          <q-route-tab name="apropos" label="A Propos" to="" class="text-italic" />
-          <q-route-tab name="connecter" label="Se connecter" to="/connection" class="text-italic" />
+          <a href="https://www.facebook.com"><img src="public/picture/icon-facebook.png" alt="facebook" /></a>
+          <a href="https://twitter.com"><img src="public/picture/icon-X.png" alt="X" class="q-px-md" /></a>
+          <a href="https://www.instagram.com"><img src="public/picture/icon-insta.png" alt="instagram" /></a>
         </q-tabs>
       </aside>
       <q-separator style="height: 3px" :dark="true" />
