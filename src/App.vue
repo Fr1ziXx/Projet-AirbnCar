@@ -16,6 +16,7 @@ export default {
 </script>
 
 <template>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <q-layout view="hHh Lpr lff">
     <q-header elevated>
       <q-toolbar>
@@ -23,7 +24,7 @@ export default {
         <q-toolbar-title>Airb&Car</q-toolbar-title>
 
         <q-tabs style="height: 60px">
-          <q-route-tab name="vehicule" label="Vehicule" to="/vehicule" class="text-italic" />
+          <q-route-tab name="vehicule" label="Vehicules" to="/vehicules" class="text-italic" />
           <q-route-tab name="apropos" label="A Propos" to="" class="text-italic" />
           <q-route-tab name="connecter" label="Se connecter" to="/connection" class="text-italic" />
         </q-tabs>
@@ -44,9 +45,11 @@ export default {
     <q-footer elevated class="column q-pa-xl">
       <aside class="row justify-between q-pa-md">
         <q-tabs dense>
-          <a href="https://www.facebook.com"><img src="public/picture/icon-facebook.png" alt="facebook" /></a>
-          <a href="https://twitter.com"><img src="public/picture/icon-X.png" alt="X" class="q-px-md" /></a>
-          <a href="https://www.instagram.com"><img src="public/picture/icon-insta.png" alt="instagram" /></a>
+          <a href="https://www.facebook.com" class="fa fa-facebook"/>
+          <a href="https://twitter.com" class="fa fa-twitter"/>
+          <a href="https://www.instagram.com" class="fa fa-instagram"/>
+          <a href="https://github.com/Fr1ziXx/Projet-AirbnCar" class="fa fa-github"/>
+          <a href="https://www.twitch.tv/mvpi59" class="fa fa-twitch"/>
         </q-tabs>
       </aside>
       <q-separator style="height: 3px" :dark="true" />
@@ -95,5 +98,17 @@ body
 
 .q-tab__label
   font-weight: 600 !important
+
+.fa
+  padding: 20px
+  font-size: 30px
+  width: 50px
+  text-align: center
+  text-decoration: none
+  color: white
+
+.fa:hover
+  opacity: 0.8
+
 </style>
 

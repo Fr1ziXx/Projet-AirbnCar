@@ -10,7 +10,7 @@ export default {
       carouselSlide: [
         {
           name: 'nom voiture1',
-          img: 'voiture1.png'
+          img: 'voiture1/voiture1p1.png'
         },
         {
           name: 'nom voiture2',
