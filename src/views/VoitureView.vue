@@ -1,7 +1,11 @@
 <script>
+
+import { ref } from 'vue'
+
 export default {
   data() {
     return {
+      date: ref(''),
       name_car: 'Cadillac Escalade',
       prix: '375€/jour',
       src: 'voiture1/voiture1p1.png',
@@ -27,40 +31,46 @@ export default {
     }
   }
 }
+
+
 </script>
 
 <template>
-  <div class="parallax row justify-center items-center">
-    <div id="para-img"></div>
-    <h2 id="title" class="text-white text-italic volkorn">{{ name_car }}</h2>
-  </div>
-  <div class="parallax row justify-center items-center">
-    <div id="para-img" style=""></div>
-  </div>
-  <section class="row justify-center">
-    <q-card class="q-pa-lg q-pb-xl container col-10 row">
-      <q-carousel
-        v-model="test"
-        transition-prev="slide-right"
-        transition-next="slide-left"
-        :autoplay="5000"
-        infinite
-        swipeable
-        animated
-        control-color="white"
-        navigation
-        padding
-        arrows
-        height="500px"
-        class="text-purple roundedClass q-ma-xl"
-      >
-        <q-carousel-slide v-for="test in slide" :key="test.img"
-                          class="column no-wrap flex-center">
-          <q-img :src="`picture/voiture/${test.img}`" no-spinner fit="cover" />
-        </q-carousel-slide>
-      </q-carousel>
-    </q-card>
-  </section>
+  <q-card class="container row q-pa-md">
+    <div class="col-6 div1 row justify-center">
+      <h3 class="volkorn text-white col-8 q-pt-xl">Découvrer le Cadillac Escalade</h3>
+      <h5 class="volkorn text-white col-8 sub-title">Le 4x4 nouvelle génération</h5>
+    </div>
+    <div class="col-6 div2">
+      <img src="public/picture/voiture/voiture1/voiture1p0.png" alt="voiture" class="img-png"/>
+    </div>
+    <div class="col-12 div3 row">
+      <div class="col-3 row justify-center" style="background-color: black">
+        <div class="col-11 q-my-lg" style="background-color: white">
+
+        </div>
+      </div>
+      <div class="col-3 row justify-center" style="background-color: white">
+        <div class="col-11 q-my-lg row justify-center" style="background-color: black">
+
+        </div>
+      </div>
+      <div class="col-3 row justify-center" style="background-color: black">
+        <div class="col-11 q-my-lg" style="background-color: white">
+
+        </div>
+      </div>
+      <div class="col-3 row justify-center">
+        <q-btn rounded push  color="black" text-color="white" class="col-11 q-my-lg volkorn" type="button" to="/" label="Réserver" style="font-size: 3em"/>
+
+      </div>
+
+
+
+
+    </div>
+  </q-card>
+
 </template>
 
 <style scoped lang="sass">
@@ -68,32 +78,16 @@ export default {
 .container
   background-color: $negative !important
   border-radius: 7px
-  margin-top: 400px
-  min-height: 300px
+  min-height: 550px
 
-#titre-voiture
-  margin-top: 150px
+.img-png
+  scale: 120%
+  margin-top: -50px
+  margin-left: 50px
 
-.parallax
-  min-height: 100vh
-  position: absolute
-  width: 100vw
-  top: 0
-  right: 0
+.sub-title
+  margin-top: -70px
 
 
-#para-img
-  background-image: url("../../public/picture/voiture/voiture1/voiture1p1.png")
-  background-attachment: fixed
-  background-position: center
-  background-repeat: no-repeat
-  background-size: cover
-  height: 100%
-  position: absolute
-  width: 100%
-
-#title
-  padding-bottom: 35vh
-  z-index: 200
 
 </style>
