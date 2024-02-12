@@ -45,30 +45,30 @@ export default {
       <img src="public/picture/voiture/voiture1/voiture1p0.png" alt="voiture" class="img-png"/>
     </div>
     <div class="col-12 div3 row">
-      <div class="col-3 row justify-center" style="background-color: black">
-        <div class="col-11 q-my-lg" style="background-color: white">
+      <div class="col-3 row justify-center" >
+        <div class="col-11 q-my-lg" >
 
         </div>
       </div>
-      <div class="col-3 row justify-center" style="background-color: white">
-        <div class="col-11 q-my-lg row justify-center" style="background-color: black">
-
-        </div>
-      </div>
-      <div class="col-3 row justify-center" style="background-color: black">
-        <div class="col-11 q-my-lg" style="background-color: white">
+      <div class="col-3 row justify-center" >
+        <div class="col-11 q-my-lg row justify-center" >
 
         </div>
       </div>
       <div class="col-3 row justify-center">
-        <q-btn rounded push  color="black" text-color="white" class="col-11 q-my-lg volkorn" type="button" to="/" label="Réserver" style="font-size: 3em"/>
+        <div class="col-11 q-my-lg" >
+
+        </div>
+      </div>
+      <div class="col-3 row justify-center">
+        <q-btn rounded push  color="black" text-color="white" class="col-11 q-my-lg volkorn btn-reserv" type="button" to="/" label="Réserver" style="font-size: 3em"/>
 
       </div>
-
-
-
-
     </div>
+  </q-card>
+  <q-card class="container row q-pa-md container2 justify-center">
+    <h4 class="volkorn titre-desc" style="color: white">Caractéristiques de la voiture :</h4>
+    
   </q-card>
 
 </template>
@@ -88,6 +88,10 @@ export default {
 .sub-title
   margin-top: -70px
 
+.container2
+  margin-top: 100px
 
+.titre-desc
+  text-decoration: underline
 
 </style>

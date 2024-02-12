@@ -1,4 +1,5 @@
 <script setup>
+alert("Ceci est un site à destination d'un projet Universitaire")
 
 </script>
 <script>
