@@ -24,7 +24,7 @@ const router = createRouter({
       component: ConnectionView
     },
     {
-      path: '/voiture',
+      path: '/voiture/:IDvoiture',
       name: 'voiture',
       component: VoitureView
     },

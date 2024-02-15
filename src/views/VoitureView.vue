@@ -1,33 +1,23 @@
 <script>
 
 import { ref } from 'vue'
+import { car_store } from '@/stores/car_store'
+
 
 export default {
   data() {
     return {
-      date: ref(''),
-      name_car: 'Cadillac Escalade',
-      prix: '375€/jour',
-      src: 'voiture1/voiture1p1.png',
-      test:'',
-      slide: [
-        {
-          img:'voiture1/voiture1p2.png'
-        },
-        {
-          img:'voiture1/voiture1p3.png'
-        },
-        {
-          img:'voiture1/voiture1p4.png'
-        },
-        {
-          img:'voiture1/voiture1p5.png'
-        },
-        {
-          img:'voiture1/voiture1p6.png'
-        },
-
-      ]
+      car: null,
+      store: car_store()
+    }
+  },
+  created() {
+    this.init(this.$route.params.IDvoiture)
+  },
+  methods: {
+    init(ID) {
+      this.car = this.store.carList[ID];
+      window.scrollTo({top: 0});
     }
   }
 }
@@ -38,37 +28,38 @@ export default {
 <template>
   <q-card class="container row q-pa-md">
     <div class="col-6 div1 row justify-center">
-      <h3 class="volkorn text-white col-8 q-pt-xl">Découvrer le Cadillac Escalade</h3>
+      <h3 class="volkorn text-white col-8 q-pt-xl">{{ car.name }}</h3>
       <h5 class="volkorn text-white col-8 sub-title">Le 4x4 nouvelle génération</h5>
     </div>
     <div class="col-6 div2">
-      <img src="public/picture/voiture/voiture1/voiture1p0.png" alt="voiture" class="img-png"/>
+      <img :src="`../picture/voiture/${car.img_detoure}`" alt="voiture" class="img-png" />
     </div>
     <div class="col-12 div3 row">
-      <div class="col-3 row justify-center" >
-        <div class="col-11 q-my-lg" >
-
-        </div>
-      </div>
-      <div class="col-3 row justify-center" >
-        <div class="col-11 q-my-lg row justify-center" >
+      <div class="col-3 row justify-center">
+        <div class="col-11 q-my-lg">
 
         </div>
       </div>
       <div class="col-3 row justify-center">
-        <div class="col-11 q-my-lg" >
+        <div class="col-11 q-my-lg row justify-center">
 
         </div>
       </div>
       <div class="col-3 row justify-center">
-        <q-btn rounded push  color="black" text-color="white" class="col-11 q-my-lg volkorn btn-reserv" type="button" to="/" label="Réserver" style="font-size: 3em"/>
+        <div class="col-11 q-my-lg">
+
+        </div>
+      </div>
+      <div class="col-3 row justify-center">
+        <q-btn rounded push color="black" text-color="white" class="col-11 q-my-lg volkorn btn-reserv" type="button"
+               to="/" label="Réserver" style="font-size: 3em" />
 
       </div>
     </div>
   </q-card>
   <q-card class="container row q-pa-md container2 justify-center">
     <h4 class="volkorn titre-desc" style="color: white">Caractéristiques de la voiture :</h4>
-    
+
   </q-card>
 
 </template>

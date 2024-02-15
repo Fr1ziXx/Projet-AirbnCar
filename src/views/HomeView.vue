@@ -1,12 +1,15 @@
-<script setup>
-alert("Ceci est un site à destination d'un projet Universitaire")
+<script>
+
 
 </script>
 <script>
 
+import { useQuasar } from 'quasar'
+
 export default {
   data() {
     return {
+      $q: useQuasar(),
       slide: 'nom voiture1',
       carouselSlide: [
         {
@@ -30,6 +33,25 @@ export default {
           img: 'voiture9.png'
         }
       ]
+    }
+  },
+  mounted() {
+    if (!sessionStorage.getItem('alert')) {
+      this.$q.notify({
+        progress: true,
+        message: 'Ceci est un site à destination Universitaire',
+        color: 'primary',
+        multiLine: true,
+        position: 'top',
+        avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+        actions: [
+          {
+            label: 'J\'ai Compris', color: 'green', handler: () => { /* ... */
+            }
+          }
+        ]
+      })
+      sessionStorage.setItem('alert', 'false')
     }
   }
 }
