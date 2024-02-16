@@ -1,6 +1,5 @@
 <script>
 
-import { ref } from 'vue'
 import { car_store } from '@/stores/car_store'
 
 
@@ -72,7 +71,7 @@ export default {
   min-height: 550px
 
 .img-png
-  scale: 120%
+  max-width: 750px
   margin-top: -50px
   margin-left: 50px
 
