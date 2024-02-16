@@ -44,7 +44,7 @@ export const car_store = defineStore('car', {
         name: 'Volkswagen New Beetle',
         prix: '100€/jour',
         img: 'newBeatle/newBeatle.png',
-        img_detoure:'newBeatle/newBeatle_retoucher.png',
+        img_detoure:'voiture1/voiture1p0.png',
         desc_offre: 'La sublime New Beetle cabriolet de chez Volkswagen vous permettra de sillonner' +
           ' les routes de la région. Ce véhicule vous offrira le plaisir du cabriolet lors des ' +
           'journées les plus ensoleillées. Son moteur diesel de 105 chevaux vous permettra de' +
