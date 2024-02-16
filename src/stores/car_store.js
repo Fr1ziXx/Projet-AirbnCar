@@ -6,8 +6,8 @@ export const car_store = defineStore('car', {
       {
         name: 'Cadillac Escalade',
         prix: '375€/jour',
-        img: 'voiture1/voiture1p1.png',
-        img_detoure:'voiture1/voiture1p0.png',
+        img: 'cadillac/cadillac1.png',
+        img_detoure:'cadillac/cadillac_retoucher.png',
         desc_offre: 'Le Cadillac Escalade est un des véhicules les plus célèbres de la marque' +
           ' américaine. Esthétique et confortable, ce 4x4 de plus de 400 chevaux vous dévoilera' +
           ' sa vitesse combinée au luxe pour une expérience unique. Son V8 ne vous laissera pas' +
@@ -53,7 +53,7 @@ export const car_store = defineStore('car', {
       {
         name: ' Limousine Lincoln Towncar',
         prix: '400€/jour',
-        img: 'voiture9.png',
+        img: 'limo/limo.png',
         img_detoure:'voiture1/voiture1p0.png',
         desc_offre: 'Cette incroyable limousine Lincoln de plus de 8 mètres vous accompagnera' +
           ' pour vos événements. 8 places passagers confortables, un intérieur cuir et un ' +
