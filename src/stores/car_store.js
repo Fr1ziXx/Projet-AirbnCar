@@ -6,8 +6,8 @@ export const car_store = defineStore('car', {
       {
         name: 'Cadillac Escalade',
         prix: '375€/jour',
-        img: 'voiture1/voiture1p1.png',
-        img_detoure:'voiture1/voiture1p0.png',
+        img: 'cadillac/cadillac.jpg',
+        img_detoure:'cadillac/cadillac_retoucher.png',
         desc_offre: 'Le Cadillac Escalade est un des véhicules les plus célèbres de la marque' +
           ' américaine. Esthétique et confortable, ce 4x4 de plus de 400 chevaux vous dévoilera' +
           ' sa vitesse combinée au luxe pour une expérience unique. Son V8 ne vous laissera pas' +
@@ -23,7 +23,7 @@ export const car_store = defineStore('car', {
       {
         name: 'Ford Mustang GT',
         prix: '375€/jour',
-        img: 'voiture4.png',
+        img: 'mustang/mustang.png',
         img_detoure:'voiture1/voiture1p0.png',
         desc_offre: 'La Ford Mustang GT Pack V8 5.0 de 2014 est l\'incarnation ultime de la puissance ' +
           'américaine sur quatre roues. Avec son moteur V8 5.0 litres sous le capot, cette icône ' +
@@ -34,7 +34,7 @@ export const car_store = defineStore('car', {
       {
         name: 'Porsche 986',
         prix: '277€/jour',
-        img: 'voiture5.png',
+        img: 'porsche/porsche.png',
         img_detoure:'voiture1/voiture1p0.png',
         desc_offre: 'Notre Porsche 986 vous dévoileras luxe et performance. Ce bijou allemand de' +
           ' 210 chevaux incarne l\'élégance intemporelle et la sportivité. Prêt à transformer' +
@@ -43,7 +43,7 @@ export const car_store = defineStore('car', {
       {
         name: 'Volkswagen New Beetle',
         prix: '100€/jour',
-        img: 'voiture7.png',
+        img: 'newBeatle/newBeatle.png',
         img_detoure:'voiture1/voiture1p0.png',
         desc_offre: 'La sublime New Beetle cabriolet de chez Volkswagen vous permettra de sillonner' +
           ' les routes de la région. Ce véhicule vous offrira le plaisir du cabriolet lors des ' +
@@ -53,7 +53,7 @@ export const car_store = defineStore('car', {
       {
         name: ' Limousine Lincoln Towncar',
         prix: '400€/jour',
-        img: 'voiture9.png',
+        img: 'limo/limo.png',
         img_detoure:'voiture1/voiture1p0.png',
         desc_offre: 'Cette incroyable limousine Lincoln de plus de 8 mètres vous accompagnera' +
           ' pour vos événements. 8 places passagers confortables, un intérieur cuir et un ' +

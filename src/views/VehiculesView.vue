@@ -28,7 +28,7 @@ export default {
         <div class="col-8 text-contenair text-white">
           <h4 class="text-italic volkorn titre-voiture">{{ car.name }}</h4>
           <h5 class="prix-voiture">{{ car.prix }}</h5>
-          <p class="des-voiture">{{ car.desc }}</p>
+          <p class="des-voiture">{{ car.desc_offre }}</p>
         </div>
       </q-card>
 
