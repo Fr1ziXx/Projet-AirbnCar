@@ -17,7 +17,7 @@ export const car_store = defineStore('car', {
         moteur:'V8 6,3 L 420cv',
         place:'7 places',
         couleur:'Blanc',
-        caroussel: ['voiture1/voiture1p1.png','voiture1/voiture1p2.png','voiture1/voiture1p3.png']
+        caroussel: [{index:1,image:'cadillac/cadillac1.png'},{index:2,image:'cadillac/cadillac2.png'},{index:3,image:'cadillac/cadillac3.png'}]
 
       },
       {

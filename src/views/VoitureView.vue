@@ -7,7 +7,8 @@ export default {
   data() {
     return {
       car: null,
-      store: car_store()
+      store: car_store(),
+      slide:null
     }
   },
   created() {
@@ -81,6 +82,29 @@ export default {
       </tr>
     </table>
     <p class="volkorn q-pa-xl" style="color: white;font-size: 1.3em">{{car.desc_offre}}</p>
+    <section>
+      <q-carousel
+        v-model="slide"
+        transition-prev="slide-right"
+        transition-next="slide-left"
+        :autoplay="5000"
+        infinite
+        swipeable
+        animated
+        control-color="white"
+        navigation
+        padding
+        arrows
+        height="500px"
+        style="width: 800px"
+        class="text-purple roundedClass q-ma-xl"
+      >
+        <q-carousel-slide v-for="slide in car.caroussel" :key="slide.image" :name="slide.index"
+                          class="column no-wrap flex-center">
+          <q-img :src="`picture/voiture/${slide.image}`" no-spinner fit="cover" />
+        </q-carousel-slide>
+      </q-carousel>
+    </section>
 
 
 
@@ -96,7 +120,7 @@ export default {
   min-height: 550px
 
 .img-png
-  max-width: 750px
+  max-width: 700px
   margin-top: -50px
   margin-left: 50px
 
