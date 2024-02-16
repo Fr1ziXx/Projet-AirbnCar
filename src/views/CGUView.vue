@@ -4,16 +4,16 @@
 
 <template>
   <section class="row justify-center">
-    <q-card class="q-pa-lg q-pb-xl  container col-10">
+    <q-card class="q-pa-lg q-pb-xl  container col-10 volkorn">
       <h4 class="volkorn">Ce site est hébergé par :</h4>
 
       <p>
       Hostinger International Ltd, société privée à responsabilité limitée de Chypre, dont l'adresse est 61 Lordou Vironos str. 6023 Larnaca, Chypre
       </p>
 
-      <h4 class="volkorn">Conditions générales d'utilisation</h4>
+      <h4>Conditions générales d'utilisation</h4>
 
-      <h5 class="volkorn">Art. 1 Conditions d'utilisation</h5>
+      <h5>Art. 1 Conditions d'utilisation</h5>
 
       <p>
         Toute personne qui accède au site https://www.airbncar.fr (ci-après le « Site ») s'engage à respecter les présentes conditions
@@ -26,7 +26,7 @@
         cette rubrique pour vérifier les Conditions Générales en vigueur
       </p>
 
-      <h5 class="volkorn">Art. 2 Données personnelles et autres données</h5>
+      <h5>Art. 2 Données personnelles et autres données</h5>
 
       <p>
         2.1 Les données sont exclusivement destinées à AirBnCar, à ses filiales ou aux membres de son réseau commercial à des fins d’enquêtes,
@@ -55,7 +55,7 @@
         onnées personnelles.
       </p>
 
-      <h5 class="volkorn"> Art. 3 Liens hypertextes</h5>
+      <h5> Art. 3 Liens hypertextes</h5>
 
       <p>
         Si vous souhaitez mettre en place un lien hypertexte vers notre Site, vous devez en conséquence prendre contact avec le Responsable du Site.
@@ -96,6 +96,10 @@
 
 p,h4,h5
   color: white
+
+h4,h5
+  text-decoration: underline
+  font-style: italic
 
 
 
