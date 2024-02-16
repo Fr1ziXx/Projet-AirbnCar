@@ -4,6 +4,7 @@ import VehiculesView from '../views/VehiculesView.vue'
 import ConnectionView from '../views/ConnectionView.vue'
 import VoitureView from '../views/VoitureView.vue'
 import InscriptionView from '@/views/InscriptionView.vue'
+import CGUView from '@/views/CGUView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +33,11 @@ const router = createRouter({
       path: '/inscription',
       name: 'inscription',
       component: InscriptionView
+    },
+    {
+      path: '/condition-generale-utilisateur',
+      name: 'CGU',
+      component: CGUView
     }
   ]
 })

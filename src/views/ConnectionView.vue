@@ -29,7 +29,7 @@ export default {
         </template>
       </q-input>
       <q-btn rounded color="white" text-color="black" label="Se connecter" type="submit" style="width: 200px; height: 50px; font-weight: bold;" class="q-mt-xl q-mb-md volkorn" to="/"/>
-      <p>Pas encore de compte ? <b @click="$router.push('/inscription')" style="cursor: grab">Inscrivez vous !</b></p>
+      <p>Pas encore de compte ? <b @click="$router.push('/inscription')" class="cursor-pointer">Inscrivez vous !</b></p>
     </q-card>
   </section>
 </template>
