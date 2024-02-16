@@ -24,7 +24,7 @@ export const car_store = defineStore('car', {
         name: 'Ford Mustang GT',
         prix: '375€/jour',
         img: 'mustang/mustang.png',
-        img_detoure:'voiture1/voiture1p0.png',
+        img_detoure:'mustang/mustang_retoucher.png',
         desc_offre: 'La Ford Mustang GT Pack V8 5.0 de 2014 est l\'incarnation ultime de la puissance ' +
           'américaine sur quatre roues. Avec son moteur V8 5.0 litres sous le capot, cette icône ' +
           'de l\'automobile offre une expérience inoubliable .Si vous recherchez une voiture qui ' +
@@ -35,7 +35,7 @@ export const car_store = defineStore('car', {
         name: 'Porsche 986',
         prix: '277€/jour',
         img: 'porsche/porsche.png',
-        img_detoure:'voiture1/voiture1p0.png',
+        img_detoure:'porsche/porsche_retoucher.png',
         desc_offre: 'Notre Porsche 986 vous dévoileras luxe et performance. Ce bijou allemand de' +
           ' 210 chevaux incarne l\'élégance intemporelle et la sportivité. Prêt à transformer' +
           ' votre événement en un moment inoubliable grâce à ce sublime cabriolet gris ?'
@@ -44,7 +44,7 @@ export const car_store = defineStore('car', {
         name: 'Volkswagen New Beetle',
         prix: '100€/jour',
         img: 'newBeatle/newBeatle.png',
-        img_detoure:'voiture1/voiture1p0.png',
+        img_detoure:'newBeatle/newBeatle_retoucher.png',
         desc_offre: 'La sublime New Beetle cabriolet de chez Volkswagen vous permettra de sillonner' +
           ' les routes de la région. Ce véhicule vous offrira le plaisir du cabriolet lors des ' +
           'journées les plus ensoleillées. Son moteur diesel de 105 chevaux vous permettra de' +
@@ -54,7 +54,7 @@ export const car_store = defineStore('car', {
         name: ' Limousine Lincoln Towncar',
         prix: '400€/jour',
         img: 'limo/limo.png',
-        img_detoure:'voiture1/voiture1p0.png',
+        img_detoure:'limo/limo_retoucher.png',
         desc_offre: 'Cette incroyable limousine Lincoln de plus de 8 mètres vous accompagnera' +
           ' pour vos événements. 8 places passagers confortables, un intérieur cuir et un ' +
           'minibar luxueux sont présents dans le véhicule. Son moteur V8 saura vous transporter' +
