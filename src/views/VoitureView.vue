@@ -8,7 +8,7 @@ export default {
     return {
       car: null,
       store: car_store(),
-      slide:null
+      slide:''
     }
   },
   created() {
