@@ -10,27 +10,27 @@ export default {
   data() {
     return {
       $q: useQuasar(),
-      slide: 'nom voiture1',
+      slide: 'nom cadillac',
       carouselSlide: [
         {
-          name: 'nom voiture1',
-          img: 'voiture1/voiture1p1.png'
+          name: 'nom cadillac',
+          img: 'cadillac/cadillac1.png'
         },
         {
           name: 'nom voiture2',
-          img: 'voiture4.png'
+          img: 'mustang.png'
         },
         {
           name: 'nom voiture3',
-          img: 'voiture5.png'
+          img: 'porsche.png'
         },
         {
           name: 'nom voiture4',
-          img: 'voiture7.png'
+          img: 'newBeatle.png'
         },
         {
           name: 'nom voiture5',
-          img: 'voiture9.png'
+          img: 'limo.png'
         }
       ]
     }
