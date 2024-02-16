@@ -41,7 +41,7 @@ export const car_store = defineStore('car', {
           ' votre événement en un moment inoubliable grâce à ce sublime cabriolet gris ?'
       },
       {
-        name: 'Volkswagen New Beetle',
+        name: 'Volkswagen New Beatle',
         prix: '100€/jour',
         img: 'newBeatle/newBeatle.png',
         img_detoure:'voiture1/voiture1p0.png',

@@ -57,8 +57,33 @@ export default {
       </div>
     </div>
   </q-card>
-  <q-card class="container row q-pa-md container2 justify-center">
-    <h4 class="volkorn titre-desc" style="color: white">Caractéristiques de la voiture :</h4>
+  <q-card class="container column  container2 flex-center">
+    <h3 class="volkorn titre-desc" style="color: white">Caractéristiques de la voiture :</h3>
+    <table width="50%" border="2px solid" style="border-color: white;font-size: 1.3em;color: white">
+      <tr class="volkorn">
+        <td class="q-pl-sm" style="width: 70%">Marque :</td>
+        <td class="q-pr-sm text-right">{{car.marque}}</td>
+      </tr>
+      <tr class="volkorn">
+        <td class="q-pl-sm">Modèle :</td>
+        <td class="q-pr-sm text-right">{{car.modele}}</td>
+      </tr>
+      <tr class="volkorn">
+        <td class="q-pl-sm">Moteur :</td>
+        <td class="q-pr-sm text-right">{{car.moteur}}</td>
+      </tr>
+      <tr class="volkorn">
+        <td class="q-pl-sm">Nombre de Places :</td>
+        <td class="q-pr-sm text-right">{{car.place}}</td>
+      </tr>
+      <tr class="volkorn">
+        <td class="q-pl-sm">Couleur :</td>
+        <td class="q-pr-sm text-right">{{car.couleur}}</td>
+      </tr>
+    </table>
+    <p class="volkorn q-pa-xl" style="color: white">{{car.desc_offre}}</p>
+
+
 
   </q-card>
 
