@@ -35,7 +35,7 @@ export const car_store = defineStore('car', {
         name: 'Porsche 986',
         prix: '277€/jour',
         img: 'porsche/porsche.png',
-        img_detoure:'voiture1/voiture1p0.png',
+        img_detoure:'porsche/porsche_retoucher.png',
         desc_offre: 'Notre Porsche 986 vous dévoileras luxe et performance. Ce bijou allemand de' +
           ' 210 chevaux incarne l\'élégance intemporelle et la sportivité. Prêt à transformer' +
           ' votre événement en un moment inoubliable grâce à ce sublime cabriolet gris ?'
@@ -54,7 +54,7 @@ export const car_store = defineStore('car', {
         name: ' Limousine Lincoln Towncar',
         prix: '400€/jour',
         img: 'limo/limo.png',
-        img_detoure:'voiture1/voiture1p0.png',
+        img_detoure:'limo/limo_retoucher.png',
         desc_offre: 'Cette incroyable limousine Lincoln de plus de 8 mètres vous accompagnera' +
           ' pour vos événements. 8 places passagers confortables, un intérieur cuir et un ' +
           'minibar luxueux sont présents dans le véhicule. Son moteur V8 saura vous transporter' +
