@@ -14,7 +14,7 @@ export const car_store = defineStore('car', {
           ' indifférent et son confort vous permettra de passer un agréable moment.',
         marque:'Cadillac',
         modele:"Escalade",
-        moteur:'V8 5,21 400cv',
+        moteur:'V8 6,3 L 420cv',
         place:'7 places',
         couleur:'Blanc',
         caroussel: ['voiture1/voiture1p1.png','voiture1/voiture1p2.png','voiture1/voiture1p3.png']
@@ -29,16 +29,26 @@ export const car_store = defineStore('car', {
           'américaine sur quatre roues. Avec son moteur V8 5.0 litres sous le capot, cette icône ' +
           'de l\'automobile offre une expérience inoubliable .Si vous recherchez une voiture qui ' +
           'allie la nostalgie du passé à la technologie moderne, la Ford Mustang GT Pack V8 5.0 de' +
-          ' 2014 est le choix parfait.'
+          ' 2014 est le choix parfait.',
+        marque:'Ford',
+        modele:"Mustang GT",
+        moteur:'V8 5,0 L 421cv',
+        place:'4 places',
+        couleur:'Noir et gris',
       },
       {
-        name: 'Porsche 986',
+        name: 'Porsche boxster 986',
         prix: '277€/jour',
         img: 'porsche/porsche.png',
         img_detoure:'porsche/porsche_retoucher.png',
         desc_offre: 'Notre Porsche 986 vous dévoileras luxe et performance. Ce bijou allemand de' +
           ' 210 chevaux incarne l\'élégance intemporelle et la sportivité. Prêt à transformer' +
-          ' votre événement en un moment inoubliable grâce à ce sublime cabriolet gris ?'
+          ' votre événement en un moment inoubliable grâce à ce sublime cabriolet gris ?',
+        marque:'Porsche',
+        modele:"Boxster 986",
+        moteur:'Flat 6 2,7 L 210cv',
+        place:'2 places',
+        couleur:'Gris',
       },
       {
         name: 'Volkswagen New Beetle',
@@ -48,7 +58,12 @@ export const car_store = defineStore('car', {
         desc_offre: 'La sublime New Beetle cabriolet de chez Volkswagen vous permettra de sillonner' +
           ' les routes de la région. Ce véhicule vous offrira le plaisir du cabriolet lors des ' +
           'journées les plus ensoleillées. Son moteur diesel de 105 chevaux vous permettra de' +
-          ' faire des trajets économiques et dynamiques.'
+          ' faire des trajets économiques et dynamiques.',
+        marque:'Volskswagen',
+        modele:"New Beatle",
+        moteur:'4 en ligne 1,9 L 90cv',
+        place:'4 places',
+        couleur:'Marron',
       },
       {
         name: ' Limousine Lincoln Towncar',
@@ -58,7 +73,12 @@ export const car_store = defineStore('car', {
         desc_offre: 'Cette incroyable limousine Lincoln de plus de 8 mètres vous accompagnera' +
           ' pour vos événements. 8 places passagers confortables, un intérieur cuir et un ' +
           'minibar luxueux sont présents dans le véhicule. Son moteur V8 saura vous transporter' +
-          ' n\'importe où.'
+          ' n\'importe où.',
+        marque:'Lincoln',
+        modele:"Towncar",
+        moteur:'V8 4,6 L 224cv',
+        place:'9 places',
+        couleur:'blanc',
       }
 
     ]
