@@ -7,7 +7,7 @@ export const car_store = defineStore('car', {
         name: 'Cadillac Escalade',
         prix: '375€/jour',
         img: 'cadillac/cadillac.jpg',
-        img_detoure:'cadillac/cadillac.png',
+        img_detoure:'cadillac/cadillac_retoucher.png',
         desc: 'Le Cadillac Escalade est un des véhicules les plus célèbres de la marque' +
           ' américaine. Esthétique et confortable, ce 4x4 de plus de 400 chevaux vous dévoilera' +
           ' sa vitesse combinée au luxe pour une expérience unique. Son V8 ne vous laissera pas' +
