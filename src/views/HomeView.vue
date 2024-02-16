@@ -18,19 +18,19 @@ export default {
         },
         {
           name: 'nom voiture2',
-          img: 'mustang.png'
+          img: 'mustang/mustang.png'
         },
         {
           name: 'nom voiture3',
-          img: 'porsche.png'
+          img: 'porsche/porsche.png'
         },
         {
           name: 'nom voiture4',
-          img: 'newBeatle.png'
+          img: 'newBeatle/newBeatle.png'
         },
         {
           name: 'nom voiture5',
-          img: 'limo.png'
+          img: 'limo/limo.png'
         }
       ]
     }
