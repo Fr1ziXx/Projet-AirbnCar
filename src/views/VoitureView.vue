@@ -120,7 +120,7 @@ export default {
   min-height: 550px
 
 .img-png
-  max-width: 700px
+  max-width: 650px
   margin-top: -50px
   margin-left: 50px
 

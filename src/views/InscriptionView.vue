@@ -10,6 +10,9 @@
         MotdePasse:"",
         CMotdePasse:""
       }
+    },
+    created() {
+      window.scrollTo({top: 0});
     }
   }
 </script>

@@ -5,6 +5,9 @@ export default {
       Email:"",
       MotdePasse:""
     }
+  },
+  created() {
+    window.scrollTo({top: 0});
   }
 }
 </script>

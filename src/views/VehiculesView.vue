@@ -7,6 +7,9 @@ export default {
       store: car_store(),
       search: ''
     }
+  },
+  created() {
+    window.scrollTo({top: 0});
   }
 }
 </script>
