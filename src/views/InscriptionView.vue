@@ -1,6 +1,6 @@
 <script>
   import { useQuasar } from 'quasar'
-  import {axios}form 'axios '
+  import {axios}from 'axios '
 
 
 
