@@ -1,5 +1,8 @@
 <script>
   import { useQuasar } from 'quasar'
+  import {axios}form 'axios '
+
+
 
   export default {
     data() {
