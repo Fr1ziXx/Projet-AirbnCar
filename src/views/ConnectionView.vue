@@ -18,11 +18,11 @@ export default {
       axios.post('conect.php', formData)
         .then(response => {
           console.log(response.data);
-          // Faites ce que vous voulez avec la réponse
+          
         })
         .catch(error => {
           console.error(error);
-          // Traitez l'erreur comme vous le souhaitez
+          
         });
     }
   },

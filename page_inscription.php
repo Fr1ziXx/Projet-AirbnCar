@@ -1,50 +1,46 @@
 <?php
-$servername="airbncnvictor.mysql.db";
-$username="airbncnvictor";
-$password="Projetl3";
-$database="airbncnvictor";
-try{
-$connection = new PDO('mysql:host=airbncnvictor.mysql.db;dbname=airbncnvictor;charset=utf8','airbncnvictor','Projetl3'); //connection au serveur ,la variable sert a savoir si la conection est etablie
-   
+$servername = "airbncnvictor.mysql.db";
+$username = "airbncnvictor";
+$password = "Projetl3";
+$database = "airbncnvictor";
+
+try {
+    $connection = new PDO('mysql:host=airbncnvictor.mysql.db;dbname=airbncnvictor;charset=utf8', 'airbncnvictor', 'Projetl3');
+} catch (PDOException $e) {
+    echo "Erreur connexion serveur : " . $e->getMessage();
 }
-catch(exeption $e ){
-       echo("erreur connexion serveur ");
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $prenom = $_POST["Prenom"];
+    $nom = $_POST["Nom"];
+    $ville = $_POST["ville"];
+    $email = $_POST["Email"];
+    $mot_de_passe1 = $_POST["MotdePasse"];
+    $mot_de_passe2 = $_POST["CMotdePasse"];
+
+    $requete = $connection->prepare("SELECT COUNT(*) FROM clients WHERE email = :email");
+    $requete->execute(array(':email' => $email));
+    $email_existe = $requete->fetchColumn();
+
+    if (strcmp($mot_de_passe1, $mot_de_passe2) != 0 || $email_existe) {
+        // Les mots de passe ne correspondent pas ou l'email est déjà utilisé
+        echo "Les mots de passe ne correspondent pas ou l'adresse email est déjà utilisée.";
+    } else {
+        // Hasher le mot de passe avant de l'insérer dans la base de données
+        $mot_de_passe1_hash = password_hash($mot_de_passe1, PASSWORD_DEFAULT);
+
+        $requete = $connection->prepare("INSERT INTO clients (nom, prénom, ville, email, mot_de_passe) VALUES (:nom, :prenom, :ville, :email, :mot_de_passe)");
+        $requete->execute(array(
+            ':nom' => $nom,
+            ':prenom' => $prenom,
+            ':ville' => $ville,
+            ':email' => $email,
+            ':mot_de_passe' => $mot_de_passe1_hash
+        ));
+
+        header('Location: https://www.airbncar.fr/index.html');
+        exit();
     }
-
-
-
-if(isset($_POST["button"]))
-{
-
-        
-
-
-    
-        
-            $prenom=$_POST["prenom"]; //recuperation des données du formulaire
-            $nom=$_POST["nom"];
-            $ville=$_POST["ville"];
-            $_EMAIL=$_POST["email"];
-            $mot_de_passe1=$_POST["mdp1"];
-            $mot_de_passe2=$_POST["mdp2"];
-        
-            $requete=$connection->prepare("SELECT COUNT(*) from clients where email ='$_EMAIL' ") ;
-            $requete->execute(['$email'=>$_EMAIL]);
-            
-            
-             if(strcmp($mot_de_passe1,$mot_de_passe2)==0  and $requete->fetchColumn() )
- {
-       echo("les 2 mots de passe sont differents ou l'adresse email est deja utilisé ");
-           
- }
- else {
-                $mot_de_passe1 = password_hash($mot_de_passe1, PASSWORD_DEFAULT);
-     $requete=$connection->prepare("INSERT INTO `clients`(`idclient`, `nom`, `prénom`, `ville`, `email`, `mot_de_passe`) VALUES ('','$nom','$prenom','$ville','$_EMAIL','$mot_de_passe1')") ;//prepare  permet de preparer la requete ,une connexion est faite avec le serveur et un template est preparé 
-            //les 2 premieres apostrophe sont vides car elle coresponde a l'id qui est auto incrementé par mysql
-            
-            $requete->execute(['$nom'=>$nom , '$prenom'=>$prenom ,'$ville'=>$ville ,'$email'=>$_EMAIL ,'$mot_de_passe'=>$mot_de_passe1]);// execute permet de remplacer les éléments php dans la requéte par des valeurs accépté par sql et la commande envoie la requete aux serveur 
-            header('Location: https://www.airbncar.fr/index.html');
- }
 }
-  
 ?>
+
