@@ -4,42 +4,42 @@
     <q-card class="container col-5 q-px-lg text-center text-white flex-center column">
       <h4>Inscription</h4>
       <form @submit.prevent="enregistrer" class="inp-inscription">
-        <q-input v-model="Nom" dense id='nom' label="Nom" label-color="white" dark class="inp-inscription">
+        <q-input v-model="Nom" dense id='nom' label="Nom" name="nom" label-color="white" dark class="inp-inscription">
           <template v-slot:append>
             <q-avatar>
               <span class="material-symbols-outlined text-white">Person</span>
             </q-avatar>
           </template>
         </q-input>
-        <q-input v-model="Prenom" dense label="Prénom" id="prenom" label-color="white" dark class="inp-inscription">
+        <q-input v-model="Prenom" dense label="Prénom" id="prenom" name="prenom" label-color="white" dark class="inp-inscription">
           <template v-slot:append>
             <q-avatar>
               <span class="material-symbols-outlined text-white">Person</span>
             </q-avatar>
           </template>
         </q-input>
-        <q-input v-model="Email" dense label="Email" id="email" label-color="white" dark class="inp-inscription">
+        <q-input v-model="Email" dense label="Email" id="email" name="email" label-color="white" dark class="inp-inscription">
           <template v-slot:append>
             <q-avatar>
               <span class="material-symbols-outlined text-white">mail</span>
             </q-avatar>
           </template>
         </q-input>
-        <q-input v-model="MotdePasse" dense id="mdp1" label="Mot de Passe" label-color="white" type="password" dark class="inp-inscription">
+        <q-input v-model="MotdePasse" dense id="mdp1" name="mdp1" label="Mot de Passe" label-color="white" type="text" dark class="inp-inscription">
           <template v-slot:append>
             <q-avatar>
               <span class="material-symbols-outlined text-white">lock</span>
             </q-avatar>
           </template>
         </q-input>
-        <q-input v-model="CMotdePasse" dense id="mdp2" label="Confirmation Mot de Passe" label-color="white" type="password" dark class="inp-inscription">
+        <q-input v-model="CMotdePasse" dense id="mdp2" name="mdp2" label="Confirmation Mot de Passe" label-color="white" type="text" dark class="inp-inscription">
           <template v-slot:append>
             <q-avatar>
               <span class="material-symbols-outlined text-white">lock</span>
             </q-avatar>
           </template>
         </q-input>
-        <q-input v-model="ville" dense id="ville" label="Ville" label-color="white" type="text" dark class="inp-inscription">
+        <q-input v-model="ville" dense id="ville" name="ville" label="Ville" label-color="white" type="text" dark class="inp-inscription">
           <template v-slot:append>
             <q-avatar>
               <span class="material-symbols-outlined text-white">lock</span>
