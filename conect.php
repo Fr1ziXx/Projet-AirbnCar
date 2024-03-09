@@ -10,13 +10,16 @@ try {
     echo "Erreur connexion serveur : " . $e->getMessage();
 }
 
+
 $_CONNECTER = 0; // Assurez-vous que la variable est initialisée
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["Email"];
     $mot_de_passe = $_POST["MotdePasse"];
+    $input = file_get_contents('php://input');
+$_POST = json_decode($input, true);
 
-    $requete = $connection->prepare("SELECT mot_de_passe FROM clients WHERE email = :email");
+    $requete = $connection->prepare("SELECT mot_de_passe FROM clients WHERE email = '$email'");
     $requete->execute(['email' => $email]); // Utilisez 'email' au lieu de '$email'
     $resultat = $requete->fetch(PDO::FETCH_ASSOC);
 

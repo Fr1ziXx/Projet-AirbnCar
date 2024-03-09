@@ -4,7 +4,7 @@ try{
 $connection = new PDO('mysql:host=airbncnvictor.mysql.db;dbname=airbncnvictor;charset=utf8','airbncnvictor','Projetl3'); //connection au serveur ,la variable sert a savoir si la conection est etablie
    
 }
-catch(exeption $e ){
+catch(PDOException $e ){
        echo("erreur connexion serveur ");
     }
     
@@ -15,7 +15,8 @@ if(isset($_POST["reserver"]))
 if($_CONNECTER==1)
 {
     
-
+    $input = file_get_contents('php://input');
+$_POST = json_decode($input, true);
     
     $requete=$connection->prepare("SELECT idclient  from  clients where email = '$_EMAIL' ");   
     $requete->execute(['$_EMAIL'=>$_EMAIL ]) ;
@@ -37,7 +38,8 @@ if($_CONNECTER==1)
     // Récupération de la date depuis le formulaire
     $Ddebut = $_POST['Ddebut'];
     $Dfin = $_POST['Dfin'];
-
+    $input = file_get_contents('php://input');
+    $_POST = json_decode($input, true);
 
     // Manipulation de la date avec PHP 
     $Ddebut = new DateTime($Ddebut);
@@ -52,7 +54,8 @@ if($_CONNECTER==1)
         if($resultat){
     
         
-        echo('date posant probléme +'$resultat['Ddebut']'+'$resultat['Dfin']'');
+            echo 'La période problématique va du ' . $resultat['Ddebut'] . ' au ' . $resultat['Dfin'];
+
     
 
        }
