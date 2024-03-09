@@ -7,6 +7,15 @@ export default {
       store: car_store(),
       search: ''
     }
+  },
+  created() {
+    this.init(this.$route.params.IDvoiture)
+  },
+
+  methods: {
+    init(ID) {
+      window.scrollTo({top: 0});
+    }
   }
 }
 </script>
