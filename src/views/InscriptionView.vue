@@ -1,5 +1,7 @@
 <script>
-  import { useQuasar } from 'quasar'
+
+
+
 
   export default {
     data() {
@@ -10,6 +12,9 @@
         MotdePasse:"",
         CMotdePasse:""
       }
+    },
+    created() {
+      window.scrollTo({top: 0});
     }
   }
 </script>
