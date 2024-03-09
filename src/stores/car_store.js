@@ -17,8 +17,7 @@ export const car_store = defineStore('car', {
         moteur:'V8 5,21 400cv',
         place:'7 places',
         couleur:'Blanc',
-        caroussel: [{index:'1',image:'cadillac/cadillac1.png'},{index:'2',image:'cadillac/cadillac2.jpg'},{index:'3',image:'cadillac/cadillac3.jpg'},{index:'4',image:'cadillac/cadillac4.jpg'}]
-
+        carousel: [{index:'1',image:'cadillac/cadillac1.png'},{index:'2',image:'cadillac/cadillac2.jpg'},{index:'3',image:'cadillac/cadillac3.jpg'},{index:'4',image:'cadillac/cadillac4.jpg'}]
       },
       {
         name: 'Ford Mustang GT',

@@ -90,7 +90,7 @@ export default {
       >
         <q-carousel-slide v-for="slide in carouselSlide" :key="slide.img" :name="slide.name"
                           class="column no-wrap flex-center">
-          <q-img :src="`picture/voiture/${slide.img}`" no-spinner fit="cover" />
+          <q-img :src="`/picture/voiture/${slide.img}`" no-spinner fit="cover" />
         </q-carousel-slide>
       </q-carousel>
     </q-card>

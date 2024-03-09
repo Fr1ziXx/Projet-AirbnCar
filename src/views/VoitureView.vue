@@ -7,8 +7,8 @@ export default {
   data() {
     return {
       car: null,
-      store: car_store(),
-      slide:''
+      carousel: '1',
+      store: car_store()
     }
   },
   created() {
@@ -16,8 +16,8 @@ export default {
   },
   methods: {
     init(ID) {
-      this.car = this.store.carList[ID];
-      window.scrollTo({top: 0});
+      this.car = this.store.carList[ID]
+      window.scrollTo({ top: 0 })
     }
   }
 }
@@ -62,29 +62,29 @@ export default {
     <table style="font-size: 1.3em;color: white;width: 50%;border: 2px white solid">
       <tr class="volkorn ligne">
         <td class="q-pl-sm" style="width: 70%">Marque :</td>
-        <td class="q-pr-sm text-right">{{car.marque}}</td>
+        <td class="q-pr-sm text-right">{{ car.marque }}</td>
       </tr>
       <tr class="volkorn ligne">
         <td class="q-pl-sm">Modèle :</td>
-        <td class="q-pr-sm text-right">{{car.modele}}</td>
+        <td class="q-pr-sm text-right">{{ car.modele }}</td>
       </tr>
       <tr class="volkorn ligne">
         <td class="q-pl-sm">Moteur :</td>
-        <td class="q-pr-sm text-right">{{car.moteur}}</td>
+        <td class="q-pr-sm text-right">{{ car.moteur }}</td>
       </tr>
       <tr class="volkorn ligne">
         <td class="q-pl-sm">Nombre de Places :</td>
-        <td class="q-pr-sm text-right">{{car.place}}</td>
+        <td class="q-pr-sm text-right">{{ car.place }}</td>
       </tr>
       <tr class="volkorn ligne">
         <td class="q-pl-sm">Couleur :</td>
-        <td class="q-pr-sm text-right">{{car.couleur}}</td>
+        <td class="q-pr-sm text-right">{{ car.couleur }}</td>
       </tr>
     </table>
-    <p class="volkorn q-pa-xl" style="color: white;font-size: 1.3em">{{car.desc_offre}}</p>
+    <p class="volkorn q-pa-xl" style="color: white;font-size: 1.3em">{{ car.desc_offre }}</p>
     <section>
       <q-carousel
-        v-model="slide"
+        v-model="carousel"
         transition-prev="slide-right"
         transition-next="slide-left"
         :autoplay="5000"
@@ -99,9 +99,9 @@ export default {
         style="width: 800px"
         class="text-purple roundedClass q-ma-xl"
       >
-        <q-carousel-slide v-for="slide in car.caroussel" :key="slide.image" :name="slide.index"
-                          class="column no-wrap flex-center">
-          <q-img :src="`picture/voiture/${slide.image}`" no-spinner fit="cover" />
+        <q-carousel-slide v-for="slide in car.carousel" :key="slide.index" :name="slide.index"
+                          class="column no-wrap flex-center no-padding">
+          <q-img :src="`/picture/voiture/${slide.image}`" no-spinner fit="cover" class="full-height full-width" />
         </q-carousel-slide>
       </q-carousel>
     </section>

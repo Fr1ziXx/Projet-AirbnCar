@@ -20,7 +20,7 @@ export default {
   <q-layout view="hHh Lpr lff">
     <q-header elevated>
       <q-toolbar>
-        <q-img width="60px" src="picture/Logo.png" @click="$router.push('/')" />
+        <q-img width="60px" src="picture/Logo.png" @click="$router.push('/')" class="cursor-pointer" />
         <q-toolbar-title>Airb&Car</q-toolbar-title>
 
         <q-tabs style="height: 60px">
