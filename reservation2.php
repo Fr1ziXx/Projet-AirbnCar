@@ -8,15 +8,15 @@ catch(PDOException $e ){
        echo("erreur connexion serveur ");
     }
     
-
+$input = file_get_contents('php://input');
+$_POST = json_decode($input, true);
 
 if(isset($_POST["reserver"]))
 {
 if($_CONNECTER==1)
 {
     
-    $input = file_get_contents('php://input');
-$_POST = json_decode($input, true);
+    
     
     $requete=$connection->prepare("SELECT idclient  from  clients where email = '$_EMAIL' ");   
     $requete->execute(['$_EMAIL'=>$_EMAIL ]) ;
@@ -38,8 +38,7 @@ $_POST = json_decode($input, true);
     // Récupération de la date depuis le formulaire
     $Ddebut = $_POST['Ddebut'];
     $Dfin = $_POST['Dfin'];
-    $input = file_get_contents('php://input');
-    $_POST = json_decode($input, true);
+   
 
     // Manipulation de la date avec PHP 
     $Ddebut = new DateTime($Ddebut);

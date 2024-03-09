@@ -7,12 +7,12 @@ $connection = new PDO('mysql:host=airbncnvictor.mysql.db;dbname=airbncnvictor;ch
 catch(PDOException $e ){
        echo("erreur connexion serveur ");
     }
-
+$input = file_get_contents('php://input');
+$_POST = json_decode($input, true);
 
     if(isset($_POST["confirmer modèle"]))
     {
-        $input = file_get_contents('php://input');
-$_POST = json_decode($input, true);
+        
         $modele=$_POST["modele"];
         $requete=$connection->prepare("SELECT   from  clients where email = '$_EMAIL' ");   
     $requete->execute(['$_EMAIL'=>$_EMAIL ]) ;
@@ -23,8 +23,7 @@ $_POST = json_decode($input, true);
 
     if(isset($_POST["mes reservations"]))
 {
-    $input = file_get_contents('php://input');
-$_POST = json_decode($input, true);
+    
     $requete=$connection->prepare("SELECT *  from  reservations where email = '$_EMAIL' ");   
     $requete->execute(['$_EMAIL'=>$_EMAIL ]) ;
     $resultat = $requete->fetchAll();
