@@ -1,59 +1,33 @@
 <?php
-$servername="airbncnvictor.mysql.db";
-$username="airbncnvictor";
-$password="Projetl3";
-$database="airbncnvictor";
+$servername = "airbncnvictor.mysql.db";
+$username = "airbncnvictor";
+$password = "Projetl3";
+$database = "airbncnvictor";
 
-try{
-$connection = new PDO('mysql:host=airbncnvictor.mysql.db;dbname=airbncnvictor;charset=utf8','airbncnvictor','Projetl3'); //connection au serveur ,la variable sert a savoir si la conection est etablie
-   
-}
-catch(exeption $e)
-{
-    echo("erreur connexion serveur");
-    
+try {
+    $connection = new PDO('mysql:host=airbncnvictor.mysql.db;dbname=airbncnvictor;charset=utf8', 'airbncnvictor', 'Projetl3');
+} catch (PDOException $e) {
+    echo "Erreur connexion serveur : " . $e->getMessage();
 }
 
+$_CONNECTER = 0; // Assurez-vous que la variable est initialisée
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST["Email"];
+    $mot_de_passe = $_POST["MotdePasse"];
 
-if(isset($_POST["button"]))
-{
+    $requete = $connection->prepare("SELECT mot_de_passe FROM clients WHERE email = :email");
+    $requete->execute(['email' => $email]); // Utilisez 'email' au lieu de '$email'
+    $resultat = $requete->fetch(PDO::FETCH_ASSOC);
 
-        
-
-$_CONNECTER=0;
-    
-    $_EMAIL =$_POST["email"];
-    $mot_de_passe1 =$_POST["mot_de_passe"]; //recuperation des identifiant dans le formulaire 
-    
-        
-    
-        
-
+    if ($resultat && password_verify($mot_de_passe, $resultat['mot_de_passe'])) {
+        // Connexion réussie, redirigez vers la page de succès
+        echo "Connexion établie";
+        $_CONNECTER = 1;
+    } else {
+        // Identifiants incorrects, renvoyer un message d'erreur
+        echo "Adresse email ou mot de passe incorrect.";
+    }
 }
-
-              // on regarde si l'email et le mots de passe fournit sont dans la base de donée ,il doivent corespondre a un seul enregistrement  
-            $requete=$connection->prepare("SELECT mot_de_passe  from  clients where email = '$_EMAIL'  ");
-            
-             $requete->execute(['$_EMAIL'=>$_EMAIL ) ;
-            
-            // on regarde si le resultat contient un element , si c'est le cas alors l'email et le mots de passe sont valide
-        
-            if(password_verify($mot_de_passe1,$requete))
-            { 
-                //$prenom=$connection->query("SELECT prenom from clients where email like "$email"); //query permet de preparer et d'executer la requete avec une seule commande 
-                
-
-                $_CONNECTER=1;
-                header('Location: https://www.airbncar.fr/index2.html');
-                exit();
-              
-            }
-            else
-            {
-                echo("aucun compte associé a ces identifiants ");
-                $_CONNECTER=0;
-            }
-
-    
 ?>
+

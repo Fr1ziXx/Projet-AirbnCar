@@ -7,7 +7,7 @@ $connection = new PDO('mysql:host=airbncnvictor.mysql.db;dbname=airbncnvictor;ch
 catch(exeption $e ){
        echo("erreur connexion serveur ");
     }
-
+    
 
 
 if(isset($_POST["reserver"]))
@@ -22,36 +22,55 @@ if($_CONNECTER==1)
     $resultat = $requete->fetch();
     $idclient=$resultat['idclient'];
 
-    $modele=$_POST["modele"];
+    
     $requete=$connection->prepare("SELECT idvoiture  from  voitures where modèle = '$modele' ");   
     $requete->execute(['$modele'=>$modele ]) ;
     $resultat = $requete->fetch(); 
-if ($resultat) {
+   if ($resultat) {
     $idvoiture = $resultat['idvoiture']; 
-}
+   }
     
 
 
 
 
     // Récupération de la date depuis le formulaire
-    $date = $_POST['date'];
+    $Ddebut = $_POST['Ddebut'];
+    $Dfin = $_POST['Dfin'];
 
 
     // Manipulation de la date avec PHP 
-    $dateObj = new DateTime($date);
-    $nouvelleDate = $dateObj->format('Y-m-d'); // Formatage de la date
+    $Ddebut = new DateTime($Ddebut);
+    $Dfin = new DateTime($Dfin);
     
+    if($Dfin >= $Ddebut)
+    {
+        $requete=$connection->prepare("SELECT Ddebut , Dfin   from reservations where ('$Dfin' >'Ddebut' AND '$Dfin'<'Dfin' )OR ('$Ddebut'>'Ddebut' AND '$Ddebut'<'Dfin')");   
+      $requete->execute(['$Ddebut'=>$Ddebut , '$Dfin'=>$Dfin ]) ;
+      $resultat = $requete->fetchAll(); 
+
+        if($resultat){
+    
+        
+        echo('date posant probléme +'$resultat['Ddebut']'+'$resultat['Dfin']'');
+    
+
+       }
+       else{
+         $requete= $connection->prepare("INSERT INTO `reservations`(`idclient`, `idvoiture`,`email`) VALUES ('$idclient','$idvoiture','$_EMAIL','$Ddebut','$Dfin')") ; 
+           $requete->execute(['$idclient'=>$idclient , '$idvoiture'=>$idvoiture ,'$_EMAIL'=>$_EMAIL ,'$Ddebut'=>$Ddebut ,'$Dfin'=>$Dfin]);
+
+       }
    
-
+    }
+    else{
+        echo("date renseigner ne respectant pas le format demander ");
+    }
 
 
     
 
-    $requete=$connection->prepare("INSERT INTO `reservations`(`idclient`, `idvoiture`, `nbjours`,'email) VALUES ('$idclient','$idvoiture','$nbjours','$_EMAIL')") ; 
-    
-    
-    $requete->execute(['$idclient'=>$idclient , '$idvoiture'=>$idvoiture ,'$nbjours'=>$nbjours ,'$_EMAIL'=>$_EMAIL]);
+   
 }
 else{
 
@@ -61,25 +80,10 @@ else{
 }
 
 
-if(isset($_POST["mes reservations"]))
-{
-    $requete=$connection->prepare("SELECT *  from  reservations where email = '$_EMAIL' ");   
-    $requete->execute(['$_EMAIL'=>$_EMAIL ]) ;
-    $resultat = $requete->fetchAll();
 
-    if ($resultats) {
-        foreach ($resultats as $resultat) {
-            
-            echo "ID : " . $resultat['id'] . "<br>";
-            echo "Email : " . $resultat['email'] . "<br>";
-           
-        }
-    } else {
-        echo "Aucun résultat trouvé pour cet email.";
-    }
     
 
 
-}
+
   
 ?>
