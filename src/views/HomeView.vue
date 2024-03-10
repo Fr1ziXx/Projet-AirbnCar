@@ -1,38 +1,24 @@
 <script>
 
-
-</script>
-<script>
-
 import { useQuasar } from 'quasar'
+import { car_store } from '@/stores/car_store'
 
 export default {
   data() {
     return {
       $q: useQuasar(),
-      slide: 'nom cadillac',
-      carouselSlide: [
-        {
-          name: 'nom cadillac',
-          img: 'cadillac/cadillac1.png'
-        },
-        {
-          name: 'nom voiture2',
-          img: 'mustang.png'
-        },
-        {
-          name: 'nom voiture3',
-          img: 'porsche.png'
-        },
-        {
-          name: 'nom voiture4',
-          img: 'newBeatle.png'
-        },
-        {
-          name: 'nom voiture5',
-          img: 'limo.png'
-        }
-      ]
+      car:null,
+      carousel: '1',
+      store:car_store()
+    }
+  },
+  created() {
+    this.init()
+  },
+  methods: {
+    init() {
+      this.car = this.store.homeList
+      window.scrollTo({ top: 0 })
     }
   },
   mounted() {
@@ -46,7 +32,7 @@ export default {
         avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
         actions: [
           {
-            label: 'J\'ai Compris', color: 'green', handler: () => { /* ... */
+            label: 'J\'ai Compris', color: 'white', handler: () => {
             }
           }
         ]
@@ -74,7 +60,7 @@ export default {
       <h4 class="text-white oswald text-italic">Voici nos offres du moment :</h4>
 
       <q-carousel
-        v-model="slide"
+        v-model="carousel"
         transition-prev="slide-right"
         transition-next="slide-left"
         :autoplay="5000"
@@ -88,9 +74,9 @@ export default {
         height="500px"
         class="text-purple roundedClass q-ma-xl"
       >
-        <q-carousel-slide v-for="slide in carouselSlide" :key="slide.img" :name="slide.name"
-                          class="column no-wrap flex-center">
-          <q-img :src="`/picture/voiture/${slide.img}`" no-spinner fit="cover" />
+        <q-carousel-slide v-for="slide in car" :key="slide.index" :name="slide.index"
+                          class="column no-wrap flex-center no-padding">
+          <q-img :src="`/picture/voiture/${slide.image}`" no-spinner fit="cover" class="full-height full-width" />
         </q-carousel-slide>
       </q-carousel>
     </q-card>

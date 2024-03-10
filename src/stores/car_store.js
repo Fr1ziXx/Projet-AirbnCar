@@ -17,7 +17,7 @@ export const car_store = defineStore('car', {
         moteur:'V8 5,21 400cv',
         place:'7 places',
         couleur:'Blanc',
-        carousel: [{index:'1',image:'cadillac/cadillac1.png'},{index:'2',image:'cadillac/cadillac2.jpg'},{index:'3',image:'cadillac/cadillac3.jpg'},{index:'4',image:'cadillac/cadillac4.jpg'}]
+        carousel: [{index:'1',image:'cadillac/cadillac1.png'},{index:'2',image:'cadillac/cadillac2.jpg'},{index:'3',image:'cadillac/cadillac3.jpg'},{index:'4',image:'cadillac/cadillac4.jpg'},{index:'5',image:'cadillac/cadillac5.jpg'},{index:'6',image:'cadillac/cadillac6.jpg'}]
       },
       {
         name: 'Ford Mustang GT',
@@ -60,6 +60,9 @@ export const car_store = defineStore('car', {
           ' n\'importe où.'
       }
 
-    ]
+    ],
+    homeList: [{index:'1',image:'cadillac/cadillac1.png'},{index:'2',image:'mustang/mustang.png'},{index:'3',image:'porsche/porsche.png'},{index:'4',image:'newBeatle/newBeatle.png'},{index:'5',image:'limo/limo.png'}]
+
+
   })
 })
