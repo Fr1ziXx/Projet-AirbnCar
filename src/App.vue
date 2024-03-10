@@ -25,7 +25,6 @@ export default {
 
         <q-tabs style="height: 60px">
           <q-route-tab name="vehicule" label="Vehicules" to="/vehicules" class="text-italic" />
-          <q-route-tab name="apropos" label="A Propos" to="" class="text-italic" />
           <q-route-tab name="connecter" label="Se connecter" to="/connection" class="text-italic" />
         </q-tabs>
         <q-btn @click="$q.dark.toggle" flat rounded>
@@ -56,6 +55,7 @@ export default {
       <aside class="column q-pa-md">
         <div class="self-end">
           <p class="q-mr-md">© 2024 Airb&Car. Tous droits réservés</p>
+          <p @click="$router.push('/condition-generale-utilisateur')" class="cursor-pointer">Condition Générale d'Utilisation</p>
         </div>
       </aside>
     </q-footer>

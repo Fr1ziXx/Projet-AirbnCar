@@ -29,16 +29,14 @@ export default {
   <q-card class="container row q-pa-md">
     <div class="col-6 div1 row justify-center">
       <h3 class="volkorn text-white col-8 q-pt-xl">{{ car.name }}</h3>
-      <h5 class="volkorn text-white col-8 sub-title">Le 4x4 nouvelle génération</h5>
+      <h5 class="volkorn text-white col-8 sub-title">{{ car.accroche }}</h5>
     </div>
     <div class="col-6 div2">
       <img :src="`../picture/voiture/${car.img_detoure}`" alt="voiture" class="img-png" />
     </div>
     <div class="col-12 div3 row">
       <div class="col-3 row justify-center">
-        <div class="col-11 q-my-lg">
-
-        </div>
+        <h3 class="">{{ car.prix }}</h3>
       </div>
       <div class="col-3 row justify-center">
         <div class="col-11 q-my-lg row justify-center">
@@ -52,7 +50,7 @@ export default {
       </div>
       <div class="col-3 row justify-center">
         <q-btn rounded push color="black" text-color="white" class="col-11 q-my-lg volkorn btn-reserv" type="button"
-               to="/" label="Réserver" style="font-size: 3em" />
+               @click="$router.push(`/voiture/${this.$route.params.IDvoiture}/reservation`)" label="Réserver" style="font-size: 3em;max-height: 50px" />
 
       </div>
     </div>
@@ -104,6 +102,7 @@ export default {
           <q-img :src="`/picture/voiture/${slide.image}`" no-spinner fit="cover" class="full-height full-width" />
         </q-carousel-slide>
       </q-carousel>
+      <p class="volkorn q-pa-xl text-center" style="color: white;font-size: 1.3em">{{ car.prevention }}</p>
     </section>
 
 
@@ -119,9 +118,9 @@ export default {
   min-height: 550px
 
 .img-png
-  max-width: 750px
+  max-width: 80vh
   margin-top: -50px
-  margin-left: 50px
+  margin-left: -10vh
 
 .sub-title
   margin-top: -70px
