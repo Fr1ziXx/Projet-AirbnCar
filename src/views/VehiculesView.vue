@@ -9,11 +9,11 @@ export default {
     }
   },
   created() {
-    this.init(this.$route.params.IDvoiture)
+    this.init()
   },
 
   methods: {
-    init(ID) {
+    init() {
       window.scrollTo({top: 0});
     }
   }
