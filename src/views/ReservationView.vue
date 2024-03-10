@@ -1,10 +1,12 @@
 <script>
 import { car_store } from '@/stores/car_store'
+import { ref } from 'vue'
 
 export default {
   setup () {
-   /* const date = ref('2019/03/01')
-    const proxyDate = ref('2019/03/01')*/
+    return {
+      model: ref('2020/07/08','2020/07/17')
+    }
   },
   data() {
     return {
@@ -32,19 +34,13 @@ export default {
       <h2 class="text-white " style="text-decoration: underline; font-style: italic" >Réservation :</h2>
       <h6 class="volkorn">Modèle : {{car.name}}</h6>
       <h6 class="volkorn">Prix par jour : {{car.prix}}</h6>
-      <div class="q-pt-xl">
-        <p>date de début</p>
-        <q-btn icon="event" round color="primary">
-          <q-popup-proxy @before-show="updateProxy" cover transition-show="scale" transition-hide="scale">
-            <q-date v-model="proxyDate">
-              <div class="row items-center justify-end q-gutter-sm">
-                <q-btn label="Cancel" color="primary" flat v-close-popup />
-                <q-btn label="OK" color="primary" flat @click="save" v-close-popup />
-              </div>
-            </q-date>
-          </q-popup-proxy>
-        </q-btn>
-      </div>
+      <h6 class="volkorn">Période de location :</h6>
+      <q-btn icon="event" round color="primary" class="q-mt-xl">
+        <q-popup-proxy @before-show="updateProxy" cover transition-show="scale" transition-hide="scale">
+          <q-date v-model="model" range />
+        </q-popup-proxy>
+      </q-btn>
+      <p>{{model}}</p>
 
       <h6 class="volkorn">Prix total : </h6>
 

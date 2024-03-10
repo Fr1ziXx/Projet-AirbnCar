@@ -67,7 +67,8 @@ export const car_store = defineStore('car', {
       }
 
     ],
-    homeList: [{index:'1',image:'cadillac/cadillac1.png'},{index:'2',image:'mustang/mustang.png'},{index:'3',image:'porsche/porsche.png'},{index:'4',image:'newBeatle/newBeatle.png'},{index:'5',image:'limo/limo.png'}]
+    homeList: [{index:'1',image:'cadillac/cadillac1.png'},{index:'2',image:'mustang/mustang.png'},
+      {index:'3',image:'porsche/porsche.png'},{index:'4',image:'newBeatle/newBeatle.png'},{index:'5',image:'limo/limo.png'}]
 
 
   })
