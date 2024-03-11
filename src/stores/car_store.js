@@ -229,11 +229,11 @@ export const car_store = defineStore('car', {
           },
           {
             index: '5',
-            image: 'porsche/boxster-4.jpg.jpg'
+            image: 'porsche/boxster-4.jpg'
           },
           {
             index: '6',
-            image: 'porsche/boxster-5.jpg.jpg'
+            image: 'porsche/boxster-5.jpg'
           }]
       },
       {
@@ -248,7 +248,7 @@ export const car_store = defineStore('car', {
           ' faire des trajets économiques et dynamiques.',
 
         prevention: 'Nous vous rapellons que ces voitures sont en locations sans chauffeur.',
-        titre1: 'Location Volskswagen New Beatle - Valenciennes',
+        titre1: 'Location Volskswagen New Beetle - Valenciennes',
         titre2: 'Vivez l\'Émotion : Volkswagen New Beetle Cabriolet 2010 - L\'Élégance et la Convivialité ',
 
         text: [
@@ -290,7 +290,29 @@ export const car_store = defineStore('car', {
         modele: 'New Beatle',
         moteur: '4 en ligne 1,9 L 90cv',
         place: '4 places',
-        couleur: 'Marron'
+        couleur: 'Marron',
+
+        carousel: [
+          {
+            index: '1',
+            image: 'newBeatle/newBeatle.png'
+          },
+          {
+            index: '2',
+            image: 'newBeatle/new-beetle22.jpg'
+          },
+          {
+            index: '3',
+            image: 'newBeatle/new-beetle18.jpg'
+          },
+          {
+            index: '4',
+            image: 'newBeatle/new-beetle15.jpg'
+          },
+          {
+            index: '5',
+            image: 'newBeatle/new-beetle8.jpg'
+          }]
       },
       {
         name: ' Limousine Lincoln Towncar',
