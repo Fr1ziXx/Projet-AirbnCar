@@ -208,7 +208,33 @@ export const car_store = defineStore('car', {
         modele: 'Boxster 986',
         moteur: 'Flat 6 2,7 L 210cv',
         place: '2 places',
-        couleur: 'Gris'
+        couleur: 'Gris',
+
+        carousel: [
+          {
+            index: '1',
+            image: 'porsche/porsche.png'
+          },
+          {
+            index: '2',
+            image: 'porsche/boxster-14.jpg'
+          },
+          {
+            index: '3',
+            image: 'porsche/boxster-12.jpg'
+          },
+          {
+            index: '4',
+            image: 'porsche/boxster-8.jpg'
+          },
+          {
+            index: '5',
+            image: 'porsche/boxster-4.jpg.jpg'
+          },
+          {
+            index: '6',
+            image: 'porsche/boxster-5.jpg.jpg'
+          }]
       },
       {
         name: 'Volkswagen New Beetle - Valenciennes',
