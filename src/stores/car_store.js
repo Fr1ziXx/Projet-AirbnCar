@@ -97,28 +97,24 @@ export const car_store = defineStore('car', {
             index: '2'
           },
           {
-            txt: '\'Au cœur de cette bête de route réside un moteur V8, synonyme de puissance et de performance. Chaque \' +\n' +
-                '            \'accélération est une expérience exaltante, propulsant le Cadillac Escalade 2010 avec une vigueur \' +\n' +
-                '            \'impressionnante, vous offrant un contrôle absolu sur la route.\\n\'',
+            txt: 'Conçue pour les amateurs de conduite authentique, cette Mustang est équipée d\'une' +
+                ' boîte de vitesses manuelle, vous offrant un contrôle total sur chaque changement de ' +
+                'vitesse. Chaque virage devient une danse harmonieuse entre l\'homme et la machine, ' +
+                'faisant de chaque trajet une expérience passionnante.',
             index: '3'
           },
           {
-            txt: 'Pour ceux qui désirent explorer les routes sans contraintes, le Cadillac Escalade 2010 est disponible' +
-                ' à la location sans chauffeur. Profitez de la liberté de partir à l\'aventure à votre rythme, en toute ' +
-                'intimité, tout en profitant du confort luxueux qu\'offre ce SUV légendaire.\n',
+            txt: 'Avec ses quatre places, la Ford Mustang GT 2020 vous permet d\'embarquer vos proches' +
+                ' pour des aventures inoubliables. Que ce soit pour une virée en ville ou une escapade ' +
+                'sur les routes sinueuses, cette voiture sportive répondra à toutes vos attentes avec sa' +
+                ' silhouette grise élégante agrémentée de bandes noires distinctives.',
             index: '4'
           },
           {
-            txt: 'Doté de sept places, ce modèle spacieux vous permet d\'embarquer toute votre famille ou vos amis pour des' +
-                ' escapades mémorables. Que ce soit pour une virée en ville ou une traversée sur les routes escarpées, le ' +
-                'Cadillac Escalade 2010 répondra à tous vos besoins avec style et raffinement.\n',
+            txt: 'Réservez dès maintenant votre Ford Mustang GT 2020 et préparez-vous à vivre des moments palpitants sur la' +
+                ' route. Plongez dans l\'univers de la conduite sportive et laissez-vous séduire par le charme intemporel de' +
+                ' cette légende automobile.',
             index: '5'
-          },
-          {
-            txt: 'Réservez dès maintenant votre Cadillac Escalade 2010 et préparez-vous à vivre une expérience de conduite ' +
-                'inégalée. Laissez-vous séduire par le charme intemporel de ce véhicule légendaire, et découvrez une nouvelle' +
-                ' dimension de luxe et de liberté sur la route.',
-            index: '6'
           }],
 
         marque: 'Ford',
