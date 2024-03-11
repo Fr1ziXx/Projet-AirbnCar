@@ -40,6 +40,8 @@ export const car_store = defineStore('car', {
             'inégalée. Laissez-vous séduire par le charme intemporel de ce véhicule légendaire, et découvrez une nouvelle' +
             ' dimension de luxe et de liberté sur la route.',
 
+
+
         marque:'Cadillac',
         modele:"Escalade",
         moteur:'V8 6,3 L 420cv',

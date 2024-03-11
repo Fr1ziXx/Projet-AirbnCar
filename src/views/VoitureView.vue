@@ -56,10 +56,12 @@ export default {
     </div>
   </q-card>
   <q-card class="container column  container2 flex-center">
-    <h3 class="volkorn titre-desc" style="color: white">Caractéristiques de la voiture :</h3>
 
-    <p class="volkorn q-pa-xl" style="color: white;font-size: 1.3em">{{ car.titre1 }}</p>
-    <p class="volkorn q-pa-xl" style="color: white;font-size: 1.3em">{{ car.text1 }}</p>
+    <h1 class="volkorn q-pa-xl text-h2 text-white">{{ car.titre1 }}</h1>
+    <div v-for="text in car.text1" :key="text.index" :name="text.txt" class="volkorn text-white">
+      <p class="q-pa-sm">{{text.txt}}</p>
+    </div>
+
     <section>
       <q-carousel
         v-model="carousel"
@@ -85,9 +87,10 @@ export default {
     </section>
 
     <p class="volkorn q-pa-xl text-center" style="color: white;font-size: 1.3em">{{ car.prevention }}</p>
-
-    <p class="volkorn q-pa-xl" style="color: white;font-size: 1.3em">{{ car.titre2 }}</p>
-    <p class="volkorn q-pa-xl" style="color: white;font-size: 1.3em">{{ car.text2 }}</p>
+    <h2 class="volkorn q-pa-xl text-h4 text-white">{{ car.titre2 }}</h2>
+    <div v-for="text in car.text2" :key="text.index" :name="text.txt" class="volkorn text-white">
+      <p class="q-pa-sm">{{text.txt}}</p>
+    </div>
 
     <table style="font-size: 1.3em;color: white;width: 50%;border: 2px white solid">
       <tr class="volkorn ligne">
@@ -120,7 +123,7 @@ export default {
 .container
   background-color: $negative !important
   border-radius: 7px
-  min-height: 550px
+  min-height: 650px
 
 .img-png
   max-width: 80vh
