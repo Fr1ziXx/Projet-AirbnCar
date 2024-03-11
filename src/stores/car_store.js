@@ -134,16 +134,20 @@ export const car_store = defineStore('car', {
             },
           {
           index: '2',
-          image: 'mustang/mustang12.jpg'
+          image: 'mustang/mustang-12.jpg'
         },
           {
             index: '3',
-            image: 'mustang/mustang7.jpg'
+            image: 'mustang/mustang-7.jpg'
           },
           {
           index: '4',
-          image: 'mustang/mustang6.jpg'
-        }]
+          image: 'mustang/mustang-3.jpg'
+        },
+          {
+            index: '5',
+            image: 'mustang/mustang-2.jpg'
+          }]
       },
       {
         name: 'Porsche boxster 986 - Valenciennes',
