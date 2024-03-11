@@ -15,30 +15,47 @@ export const car_store = defineStore('car', {
           ' indifférent et son confort vous permettra de passer un agréable moment.',
         prevention:'Nous vous rapellons que ces voitures sont en locations sans chauffeur.',
         titre1:'Location Cadillac Escalade',
-        text1:'Le Cadillac Escalade est un des véhicules les plus célèbres de la marque' +
-            ' américaine. Esthétique et confortable, ce 4x4 de plus de 400 chevaux vous dévoilera' +
-            ' sa vitesse combinée au luxe pour une expérience unique. Son V8 ne vous laissera pas' +
-            ' indifférent et son confort vous permettra de passer un agréable moment.',
         titre2:'Louez l\'Exclusivité : Cadillac Escalade 2015 - Votre Expérience de Conduite Sans Limite',
-        text2:'Plongez dans l\'essence même du luxe automobile avec le Cadillac Escalade 2010. Symbole d\'élégance' +
-            ' et de prestige depuis des années, ce modèle emblématique continue de séduire par son style distinctif ' +
-            'et ses performances inégalées.\n' +
-            '\n' +
-            'Au cœur de cette bête de route réside un moteur V8, synonyme de puissance et de performance. Chaque ' +
-            'accélération est une expérience exaltante, propulsant le Cadillac Escalade 2010 avec une vigueur ' +
-            'impressionnante, vous offrant un contrôle absolu sur la route.\n' +
-            '\n' +
-            'Pour ceux qui désirent explorer les routes sans contraintes, le Cadillac Escalade 2010 est disponible' +
-            ' à la location sans chauffeur. Profitez de la liberté de partir à l\'aventure à votre rythme, en toute ' +
-            'intimité, tout en profitant du confort luxueux qu\'offre ce SUV légendaire.\n' +
-            '\n' +
-            'Doté de sept places, ce modèle spacieux vous permet d\'embarquer toute votre famille ou vos amis pour des' +
-            ' escapades mémorables. Que ce soit pour une virée en ville ou une traversée sur les routes escarpées, le ' +
-            'Cadillac Escalade 2010 répondra à tous vos besoins avec style et raffinement.\n' +
-            '\n' +
-            'Réservez dès maintenant votre Cadillac Escalade 2010 et préparez-vous à vivre une expérience de conduite ' +
+
+        text:[
+            {
+              txt:'Le Cadillac Escalade est un des véhicules les plus célèbres de la marque' +
+              ' américaine. Esthétique et confortable, ce 4x4 de plus de 400 chevaux vous dévoilera' +
+              ' sa vitesse combinée au luxe pour une expérience unique. Son V8 ne vous laissera pas' +
+              'indifférent et son confort vous permettra de passer un agréable moment.',
+          index:'1'
+            },
+          {
+            txt:'Plongez dans l\'essence mêmedu luxeautomobile avecle Cadillac'+
+            'Escalade 2010.Symbole d\'élégance et de prestige depuis des années,'+
+                'ce modèle emblématique continue de séduire par son style distinctif' +
+'            et ses performances inégalées.',
+            index:'2'
+          },
+          {
+            txt:'\'Au cœur de cette bête de route réside un moteur V8, synonyme de puissance et de performance. Chaque \' +\n' +
+                '            \'accélération est une expérience exaltante, propulsant le Cadillac Escalade 2010 avec une vigueur \' +\n' +
+                '            \'impressionnante, vous offrant un contrôle absolu sur la route.\\n\'',
+            index:'3'
+          },
+          {
+            txt:'Pour ceux qui désirent explorer les routes sans contraintes, le Cadillac Escalade 2010 est disponible' +
+                ' à la location sans chauffeur. Profitez de la liberté de partir à l\'aventure à votre rythme, en toute ' +
+                'intimité, tout en profitant du confort luxueux qu\'offre ce SUV légendaire.\n',
+            index:'4'
+          },
+          {
+            txt:'Doté de sept places, ce modèle spacieux vous permet d\'embarquer toute votre famille ou vos amis pour des' +
+                ' escapades mémorables. Que ce soit pour une virée en ville ou une traversée sur les routes escarpées, le ' +
+                'Cadillac Escalade 2010 répondra à tous vos besoins avec style et raffinement.\n',
+            index:'5'
+          },
+          {
+            txt:'Réservez dès maintenant votre Cadillac Escalade 2010 et préparez-vous à vivre une expérience de conduite ' +
             'inégalée. Laissez-vous séduire par le charme intemporel de ce véhicule légendaire, et découvrez une nouvelle' +
-            ' dimension de luxe et de liberté sur la route.',
+                ' dimension de luxe et de liberté sur la route.',
+            index:'6'
+          }],
 
 
 
