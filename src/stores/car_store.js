@@ -14,6 +14,11 @@ export const car_store = defineStore('car', {
           ' sa vitesse combinée au luxe pour une expérience unique. Son V8 ne vous laissera pas' +
           ' indifférent et son confort vous permettra de passer un agréable moment.',
         prevention:'Nous vous rapellons que ces voitures sont en locations sans chauffeur.',
+        titre1:'',
+        text1:'',
+        titre2:'',
+        text2:'',
+
         marque:'Cadillac',
         modele:"Escalade",
         moteur:'V8 6,3 L 420cv',
@@ -34,6 +39,13 @@ export const car_store = defineStore('car', {
           'de l\'automobile offre une expérience inoubliable .Si vous recherchez une voiture qui ' +
           'allie la nostalgie du passé à la technologie moderne, la Ford Mustang GT Pack V8 5.0 de' +
           ' 2014 est le choix parfait.',
+
+        prevention:'Nous vous rapellons que ces voitures sont en locations sans chauffeur.',
+        titre1:'',
+        text1:'',
+        titre2:'',
+        text2:'',
+
         marque:'Ford',
         modele:"Mustang GT",
         moteur:'V8 5,0 L 421cv',
@@ -49,6 +61,13 @@ export const car_store = defineStore('car', {
         desc_offre: 'Notre Porsche 986 vous dévoileras luxe et performance. Ce bijou allemand de' +
           ' 210 chevaux incarne l\'élégance intemporelle et la sportivité. Prêt à transformer' +
           ' votre événement en un moment inoubliable grâce à ce sublime cabriolet gris ?',
+
+        prevention:'Nous vous rapellons que ces voitures sont en locations sans chauffeur.',
+        titre1:'',
+        text1:'',
+        titre2:'',
+        text2:'',
+
         marque:'Porsche',
         modele:"Boxster 986",
         moteur:'Flat 6 2,7 L 210cv',
@@ -65,6 +84,13 @@ export const car_store = defineStore('car', {
           ' les routes de la région. Ce véhicule vous offrira le plaisir du cabriolet lors des ' +
           'journées les plus ensoleillées. Son moteur diesel de 105 chevaux vous permettra de' +
           ' faire des trajets économiques et dynamiques.',
+
+        prevention:'Nous vous rapellons que ces voitures sont en locations sans chauffeur.',
+        titre1:'',
+        text1:'',
+        titre2:'',
+        text2:'',
+
         marque:'Volskswagen',
         modele:"New Beatle",
         moteur:'4 en ligne 1,9 L 90cv',
@@ -81,6 +107,13 @@ export const car_store = defineStore('car', {
           ' pour vos événements. 8 places passagers confortables, un intérieur cuir et un ' +
           'minibar luxueux sont présents dans le véhicule. Son moteur V8 saura vous transporter' +
           ' n\'importe où.',
+
+        prevention:'Nous vous rapellons que ces voitures sont en locations sans chauffeur.',
+        titre1:'',
+        text1:'',
+        titre2:'',
+        text2:'',
+
         marque:'Lincoln',
         modele:"Towncar",
         moteur:'V8 4,6 L 224cv',

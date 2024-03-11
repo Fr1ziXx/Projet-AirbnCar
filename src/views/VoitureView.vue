@@ -7,7 +7,6 @@ export default {
   data() {
     return {
       car: null,
-
       carousel: '1',
       store: car_store()
     }
@@ -58,29 +57,9 @@ export default {
   </q-card>
   <q-card class="container column  container2 flex-center">
     <h3 class="volkorn titre-desc" style="color: white">Caractéristiques de la voiture :</h3>
-    <table style="font-size: 1.3em;color: white;width: 50%;border: 2px white solid">
-      <tr class="volkorn ligne">
-        <td class="q-pl-sm" style="width: 70%">Marque :</td>
-        <td class="q-pr-sm text-right">{{ car.marque }}</td>
-      </tr>
-      <tr class="volkorn ligne">
-        <td class="q-pl-sm">Modèle :</td>
-        <td class="q-pr-sm text-right">{{ car.modele }}</td>
-      </tr>
-      <tr class="volkorn ligne">
-        <td class="q-pl-sm">Moteur :</td>
-        <td class="q-pr-sm text-right">{{ car.moteur }}</td>
-      </tr>
-      <tr class="volkorn ligne">
-        <td class="q-pl-sm">Nombre de Places :</td>
-        <td class="q-pr-sm text-right">{{ car.place }}</td>
-      </tr>
-      <tr class="volkorn ligne">
-        <td class="q-pl-sm">Couleur :</td>
-        <td class="q-pr-sm text-right">{{ car.couleur }}</td>
-      </tr>
-    </table>
-    <p class="volkorn q-pa-xl" style="color: white;font-size: 1.3em">{{ car.desc_offre }}</p>
+
+    <p class="volkorn q-pa-xl" style="color: white;font-size: 1.3em">{{ car.titre1 }}</p>
+    <p class="volkorn q-pa-xl" style="color: white;font-size: 1.3em">{{ car.text1 }}</p>
     <section>
       <q-carousel
         v-model="carousel"
@@ -103,8 +82,35 @@ export default {
           <q-img :src="`/picture/voiture/${slide.image}`" no-spinner fit="cover" class="full-height full-width" />
         </q-carousel-slide>
       </q-carousel>
-      <p class="volkorn q-pa-xl text-center" style="color: white;font-size: 1.3em">{{ car.prevention }}</p>
     </section>
+
+    <p class="volkorn q-pa-xl text-center" style="color: white;font-size: 1.3em">{{ car.prevention }}</p>
+
+    <p class="volkorn q-pa-xl" style="color: white;font-size: 1.3em">{{ car.titre2 }}</p>
+    <p class="volkorn q-pa-xl" style="color: white;font-size: 1.3em">{{ car.text2 }}</p>
+
+    <table style="font-size: 1.3em;color: white;width: 50%;border: 2px white solid">
+      <tr class="volkorn ligne">
+        <td class="q-pl-sm" style="width: 70%">Marque :</td>
+        <td class="q-pr-sm text-right">{{ car.marque }}</td>
+      </tr>
+      <tr class="volkorn ligne">
+        <td class="q-pl-sm">Modèle :</td>
+        <td class="q-pr-sm text-right">{{ car.modele }}</td>
+      </tr>
+      <tr class="volkorn ligne">
+        <td class="q-pl-sm">Moteur :</td>
+        <td class="q-pr-sm text-right">{{ car.moteur }}</td>
+      </tr>
+      <tr class="volkorn ligne">
+        <td class="q-pl-sm">Nombre de Places :</td>
+        <td class="q-pr-sm text-right">{{ car.place }}</td>
+      </tr>
+      <tr class="volkorn ligne">
+        <td class="q-pl-sm">Couleur :</td>
+        <td class="q-pr-sm text-right">{{ car.couleur }}</td>
+      </tr>
+    </table>
   </q-card>
 
 </template>
