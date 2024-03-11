@@ -57,10 +57,8 @@ export default {
   </q-card>
   <q-card class="container column  container2 flex-center">
 
-    <h1 class="volkorn q-pa-xl text-h2 text-white">{{ car.titre1 }}</h1>
-    <div v-for="text in car.text1" :key="text.index" :name="text.txt" class="volkorn text-white">
-      <p class="q-pa-sm">{{text.txt}}</p>
-    </div>
+    <h1 class="volkorn q-pa-xl text-h2 text-white" style="text-decoration: underline">{{ car.titre1 }}</h1>
+    <p class="volkorn text-white q-pa-xl" style="margin: 0 120px;font-size: 1.1em">{{car.desc_offre}}</p>
 
     <section>
       <q-carousel
@@ -87,12 +85,12 @@ export default {
     </section>
 
     <p class="volkorn q-pa-xl text-center" style="color: white;font-size: 1.3em">{{ car.prevention }}</p>
-    <h2 class="volkorn q-pa-xl text-h4 text-white">{{ car.titre2 }}</h2>
-    <div v-for="text in car.text2" :key="text.index" :name="text.txt" class="volkorn text-white">
-      <p class="q-pa-sm">{{text.txt}}</p>
+    <h2 class="volkorn q-pa-xl text-h4 text-white" style="text-decoration: underline">{{ car.titre2 }}</h2>
+    <div v-for="text in car.text" :key="text.index" :name="text.txt" class="volkorn text-white">
+      <p class="q-pa-lg" style="margin: 0 120px;font-size: 1.1em">{{text.txt}}</p>
     </div>
 
-    <table style="font-size: 1.3em;color: white;width: 50%;border: 2px white solid">
+    <table style="font-size: 1.3em;color: white;width: 50%;border: 2px white solid" class="q-ma-xl">
       <tr class="volkorn ligne">
         <td class="q-pl-sm" style="width: 70%">Marque :</td>
         <td class="q-pr-sm text-right">{{ car.marque }}</td>
