@@ -7,6 +7,7 @@ export default {
   data() {
     return {
       $q: useQuasar(),
+
       car:null,
       carousel: '1',
       store:car_store()

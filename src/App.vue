@@ -52,7 +52,7 @@ export default {
         </q-tabs>
       </aside>
       <q-separator style="height: 3px" :dark="true" />
-      <aside class="column q-pa-md">
+      <aside class="column q-pt-md">
         <div class="self-end">
           <p class="q-mr-md">© 2024 Airb&Car. Tous droits réservés</p>
           <p @click="$router.push('/condition-generale-utilisateur')" class="cursor-pointer">Condition Générale d'Utilisation</p>

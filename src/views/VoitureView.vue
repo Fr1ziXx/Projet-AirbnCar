@@ -7,6 +7,7 @@ export default {
   data() {
     return {
       car: null,
+
       carousel: '1',
       store: car_store()
     }
@@ -104,8 +105,6 @@ export default {
       </q-carousel>
       <p class="volkorn q-pa-xl text-center" style="color: white;font-size: 1.3em">{{ car.prevention }}</p>
     </section>
-
-
   </q-card>
 
 </template>
