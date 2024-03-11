@@ -5,6 +5,7 @@ export const car_store = defineStore('car', {
     carList: [
       {
         name: 'Cadillac Escalade',
+        accroche:'Le 4x4 nouvelle génération',
         prix: '375€/jour',
         img: 'cadillac/cadillac.jpg',
         img_detoure:'cadillac/cadillac_retoucher.png',
@@ -12,19 +13,22 @@ export const car_store = defineStore('car', {
           ' américaine. Esthétique et confortable, ce 4x4 de plus de 400 chevaux vous dévoilera' +
           ' sa vitesse combinée au luxe pour une expérience unique. Son V8 ne vous laissera pas' +
           ' indifférent et son confort vous permettra de passer un agréable moment.',
+        prevention:'Nous vous rapellons que ces voitures sont en locations sans chauffeur.',
         marque:'Cadillac',
         modele:"Escalade",
         moteur:'V8 6,3 L 420cv',
         place:'7 places',
         couleur:'Blanc',
-        caroussel: [{index:'1',image:'cadillac/cadillac1.png'},{index:'2',image:'cadillac/cadillac2.png'},{index:'3',image:'cadillac/cadillac3.png'},{index:'4',image:'cadillac/cadillac4.png'}]
+
+        carousel: [{index:'1',image:'cadillac/cadillac1.png'},{index:'2',image:'cadillac/cadillac2.jpg'},{index:'3',image:'cadillac/cadillac3.jpg'},{index:'4',image:'cadillac/cadillac4.jpg'},{index:'5',image:'cadillac/cadillac5.jpg'},{index:'6',image:'cadillac/cadillac6.jpg'}]
 
       },
       {
         name: 'Ford Mustang GT',
+        accroche:'',
         prix: '375€/jour',
         img: 'mustang/mustang.png',
-        img_detoure:'mustang/mustang_retoucher.png',
+        img_detoure:'mustang/mustang.png',
         desc_offre: 'La Ford Mustang GT Pack V8 5.0 de 2014 est l\'incarnation ultime de la puissance ' +
           'américaine sur quatre roues. Avec son moteur V8 5.0 litres sous le capot, cette icône ' +
           'de l\'automobile offre une expérience inoubliable .Si vous recherchez une voiture qui ' +
@@ -37,7 +41,11 @@ export const car_store = defineStore('car', {
         couleur:'Noir et gris',
       },
       {
+
+        
+
         name: 'Porsche boxster 986',
+        accroche:'',
         prix: '277€/jour',
         img: 'porsche/porsche.png',
         img_detoure:'porsche/porsche_retoucher.png',
@@ -52,6 +60,7 @@ export const car_store = defineStore('car', {
       },
       {
         name: 'Volkswagen New Beetle',
+        accroche:'',
         prix: '100€/jour',
         img: 'newBeatle/newBeatle.png',
         img_detoure:'voiture1/voiture1p0.png',
@@ -67,6 +76,7 @@ export const car_store = defineStore('car', {
       },
       {
         name: ' Limousine Lincoln Towncar',
+        accroche:'',
         prix: '400€/jour',
         img: 'limo/limo.png',
         img_detoure:'limo/limo_retoucher.png',
@@ -81,6 +91,10 @@ export const car_store = defineStore('car', {
         couleur:'blanc',
       }
 
-    ]
+    ],
+    homeList: [{index:'1',image:'cadillac/cadillac1.png'},{index:'2',image:'mustang/mustang.png'},
+      {index:'3',image:'porsche/porsche.png'},{index:'4',image:'newBeatle/newBeatle.png'},{index:'5',image:'limo/limo.png'}]
+
+
   })
 })

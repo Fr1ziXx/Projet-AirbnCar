@@ -5,6 +5,7 @@ import ConnectionView from '../views/ConnectionView.vue'
 import VoitureView from '../views/VoitureView.vue'
 import InscriptionView from '@/views/InscriptionView.vue'
 import CGUView from '@/views/CGUView.vue'
+import ReservationView from '@/views/ReservationView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,6 +39,11 @@ const router = createRouter({
       path: '/condition-generale-utilisateur',
       name: 'CGU',
       component: CGUView
+    },
+    {
+      path: '/voiture/:IDvoiture/reservation',
+      name: 'reservation',
+      component: ReservationView
     }
   ]
 })
