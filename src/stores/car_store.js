@@ -370,7 +370,25 @@ export const car_store = defineStore('car', {
         modele: 'Towncar',
         moteur: 'V8 4,6 L 224cv',
         place: '9 places',
-        couleur: 'blanc'
+        couleur: 'blanc',
+
+        carousel: [
+          {
+            index: '1',
+            image: 'limo/limo.png'
+          },
+          {
+            index: '2',
+            image: 'limo/limo-3.jpg'
+          },
+          {
+            index: '3',
+            image: 'limo/limo-7.jpg'
+          },
+          {
+            index: '4',
+            image: 'limo/limo-11.jpg'
+          }]
       }
 
     ],
