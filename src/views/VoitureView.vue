@@ -90,7 +90,8 @@ export default {
       <p class="q-pa-lg" style="margin: 0 120px;font-size: 1.1em">{{text.txt}}</p>
     </div>
 
-    <table style="font-size: 1.3em;color: white;width: 50%;border: 2px white solid; margin-bottom: 100px" class="q-ma-xl">
+
+    <table style="font-size: 1.3em;color: white;width: 50%;border: 2px white solid" class="q-ma-xl">
       <tr class="volkorn ligne">
         <td class="q-pl-sm" style="width: 70%">Marque :</td>
         <td class="q-pr-sm text-right">{{ car.marque }}</td>
@@ -112,6 +113,10 @@ export default {
         <td class="q-pr-sm text-right">{{ car.couleur }}</td>
       </tr>
     </table>
+
+    <q-btn rounded push color="black" text-color="white" class="col-11 q-my-lg volkorn btn-reserv" type="button"
+           @click="$router.push(`/voiture/${this.$route.params.IDvoiture}/reservation`)" label="Réserver" style="font-size: 2em;max-height: 50px" />
+
   </q-card>
 
 </template>
