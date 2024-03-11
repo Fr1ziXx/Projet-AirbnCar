@@ -29,7 +29,6 @@ export default {
   <q-card class="container row q-pa-md">
     <div class="col-6 div1 row justify-center">
       <h3 class="volkorn text-white col-8 q-pt-xl">{{ car.name }}</h3>
-      <h5 class="volkorn text-white col-8 sub-title">{{ car.accroche }}</h5>
     </div>
     <div class="col-6 div2">
       <img :src="`../picture/voiture/${car.img_detoure}`" alt="voiture" class="img-png" />

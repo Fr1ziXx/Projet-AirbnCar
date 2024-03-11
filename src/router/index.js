@@ -48,5 +48,23 @@ const router = createRouter({
   ]
 })
 
+
+/*router.beforeEach(async (to, from) => {
+  let connect =
+  console.log(connect)
+  console.log(window.location.search)
+  if (
+    // make sure the user is authenticated
+    connect ===0 &&
+    // ❗️ Avoid an infinite redirect
+    to.name !== 'connection'
+  ) {
+    // redirect the user to the login page
+    return { name: 'connection' }
+  }
+})*/
+
 export default router
+
+
 

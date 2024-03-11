@@ -5,7 +5,6 @@ export const car_store = defineStore('car', {
     carList: [
       {
         name: 'Cadillac Escalade',
-        accroche: 'Le 4x4 nouvelle génération',
         prix: '375€/jour',
         img: 'cadillac/cadillac.jpg',
         img_detoure: 'cadillac/cadillac_retoucher.png',
@@ -68,7 +67,6 @@ export const car_store = defineStore('car', {
       },
       {
         name: 'Ford Mustang GT',
-        accroche: '',
         prix: '375€/jour',
         img: 'mustang/mustang.png',
         img_detoure: 'mustang/mustang_retoucher.png',
@@ -151,7 +149,6 @@ export const car_store = defineStore('car', {
       },
       {
         name: 'Porsche boxster 986 - Valenciennes',
-        accroche: '',
         prix: '277€/jour',
         img: 'porsche/porsche.png',
         img_detoure: 'porsche/porsche_retoucher.png',
@@ -238,7 +235,6 @@ export const car_store = defineStore('car', {
       },
       {
         name: 'Volkswagen New Beetle - Valenciennes',
-        accroche: '',
         prix: '100€/jour',
         img: 'newBeatle/newBeatle.png',
         img_detoure: 'newBeatle/newBeatle_retoucher.png',
@@ -316,7 +312,6 @@ export const car_store = defineStore('car', {
       },
       {
         name: ' Limousine Lincoln Towncar',
-        accroche: '',
         prix: '400€/jour',
         img: 'limo/limo.png',
         img_detoure: 'limo/limo_retoucher.png',
