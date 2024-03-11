@@ -79,7 +79,7 @@ export const car_store = defineStore('car', {
           ' 2014 est le choix parfait.',
 
         prevention: 'Nous vous rapellons que ces voitures sont en locations sans chauffeur.',
-        titre1: 'Location Ford Mustang GT',
+        titre1: 'Location Ford Mustang GT - Valenciennes',
         titre2: 'Explorez l\'Adrénaline : Ford Mustang GT 2020 - La Puissance Entre Vos Mains',
 
         text: [
@@ -97,9 +97,9 @@ export const car_store = defineStore('car', {
             index: '2'
           },
           {
-            txt: '\'Au cœur de cette bête de route réside un moteur V8, synonyme de puissance et de performance. Chaque \' +\n' +
-                '            \'accélération est une expérience exaltante, propulsant le Cadillac Escalade 2010 avec une vigueur \' +\n' +
-                '            \'impressionnante, vous offrant un contrôle absolu sur la route.\\n\'',
+            txt: 'Au cœur de cette bête de route réside un moteur V8, synonyme de puissance et de performance. Chaque ' +
+                ' accélération est une expérience exaltante, propulsant le Cadillac Escalade 2010 avec une vigueur ' +
+                ' impressionnante, vous offrant un contrôle absolu sur la route.\\n\'',
             index: '3'
           },
           {
@@ -128,7 +128,7 @@ export const car_store = defineStore('car', {
         couleur: 'Noir et gris'
       },
       {
-        name: 'Porsche boxster 986',
+        name: 'Porsche boxster 986 - Valenciennes',
         accroche: '',
         prix: '277€/jour',
         img: 'porsche/porsche.png',
@@ -138,10 +138,49 @@ export const car_store = defineStore('car', {
           ' votre événement en un moment inoubliable grâce à ce sublime cabriolet gris ?',
 
         prevention: 'Nous vous rapellons que ces voitures sont en locations sans chauffeur.',
-        titre1: '',
-        text1: '',
-        titre2: '',
-        text2: '',
+        titre1: 'Location porsche boxster',
+        titre2: 'Découvrez l\'Exaltation : Porsche Boxster 986 2002 - La Synthèse de la Performance et du Plaisir',
+
+        text: [
+          {
+            txt: 'Plongez dans le monde de la conduite pure avec la Porsche Boxster 986 2002.' +
+                ' Ce cabriolet emblématique incarne la quintessence du plaisir de conduire, ' +
+                'offrant une expérience dynamique et enivrante à chaque instant.',
+            index: '1'
+          },
+          {
+            txt: 'Dotée d\'un moteur flat 6 de 210 chevaux, la Porsche Boxster 986 déploie une' +
+                ' puissance impressionnante, vous propulsant sur l\'asphalte avec une agilité et ' +
+                'une vivacité incomparables. Chaque accélération est une montée d\'adrénaline, ' +
+                'vous permettant de ressentir la véritable essence de la conduite sportive.',
+            index: '2'
+          },
+          {
+            txt: 'Conçue pour les puristes, cette Porsche est équipée d\'une boîte automatique,' +
+                ' assurant des changements de vitesses fluides et précis. Chaque virage devient une' +
+                ' danse harmonieuse entre le conducteur et la route, vous offrant un contrôle absolu ' +
+                'sur votre expérience de conduite.',
+            index: '3'
+          },
+          {
+            txt: 'Pour ceux qui désirent explorer les routes sans contraintes, le Cadillac Escalade 2010 est disponible' +
+                ' à la location sans chauffeur. Profitez de la liberté de partir à l\'aventure à votre rythme, en toute ' +
+                'intimité, tout en profitant du confort luxueux qu\'offre ce SUV légendaire.\n',
+            index: '4'
+          },
+          {
+            txt: 'Avec ses deux places, la Porsche Boxster 986 vous invite à partager des moments intimes ' +
+                'au volant avec votre partenaire ou un ami proche. Que ce soit pour une balade décontractée ' +
+                'le long de la côte ou une escapade sur les routes sinueuses, ce cabriolet vous promet des moments' +
+                ' de plaisir inoubliables.',
+            index: '5'
+          },
+          {
+            txt: 'Réservez dès maintenant votre Porsche Boxster 986 2002 et embarquez pour une aventure sur' +
+                ' la route. Laissez-vous séduire par le charme intemporel de cette voiture de sport emblématique ' +
+                'et découvrez la fusion parfaite entre performance et plaisir de conduire.',
+            index: '6'
+          }],
 
         marque: 'Porsche',
         modele: 'Boxster 986',
@@ -150,7 +189,7 @@ export const car_store = defineStore('car', {
         couleur: 'Gris'
       },
       {
-        name: 'Volkswagen New Beetle',
+        name: 'Volkswagen New Beetle - Valenciennes',
         accroche: '',
         prix: '100€/jour',
         img: 'newBeatle/newBeatle.png',
@@ -161,10 +200,43 @@ export const car_store = defineStore('car', {
           ' faire des trajets économiques et dynamiques.',
 
         prevention: 'Nous vous rapellons que ces voitures sont en locations sans chauffeur.',
-        titre1: '',
-        text1: '',
-        titre2: '',
-        text2: '',
+        titre1: 'Location Volskswagen New Beatle - Valenciennes',
+        titre2: 'Vivez l\'Émotion : Volkswagen New Beetle Cabriolet 2010 - L\'Élégance et la Convivialité ',
+
+        text: [
+          {
+            txt: 'Plongez dans l\'univers rétro-chic de la conduite décapotable avec la Volkswagen' +
+                ' New Beetle Cabriolet 2010. Symbole d\'élégance et de convivialité, ce cabriolet' +
+                ' emblématique vous invite à vivre des moments inoubliables sur la route.',
+            index: '1'
+          },
+          {
+            txt: 'Propulsée par le célèbre moteur 1.9L TDI, la Volkswagen New Beetle Cabriolet offre ' +
+                'une combinaison parfaite entre performance et efficacité énergétique. Chaque trajet ' +
+                'est une occasion de profiter de la conduite fluide et économique que seul un moteur ' +
+                'diesel peut offrir.',
+            index: '2'
+          },
+          {
+            txt: 'Avec ses quatre places, ce cabriolet spacieux est idéal pour partager des aventures ' +
+                ' avec vos proches. Que ce soit pour une escapade en ville ou une virée à la campagne,' +
+                ' la Volkswagen New Beetle Cabriolet vous offre un confort exceptionnel et une expérience' +
+                ' de conduite agréable à tous les passagers.',
+            index: '3'
+          },
+          {
+            txt: 'Dotée d\'une capote souple qui se déploie en quelques instants, cette voiture vous permet' +
+                ' de profiter pleinement des joies de la conduite en plein air. Laissez-vous bercer par le vent' +
+                ' et le soleil tout en admirant le paysage qui défile autour de vous.',
+            index: '4'
+          },
+          {
+            txt: 'Réservez dès maintenant votre Volkswagen New Beetle Cabriolet 2010 et préparez-vous ' +
+                'à vivre des moments de pur bonheur sur la route. Découvrez la fusion parfaite entre le ' +
+                'charme rétro et les technologies modernes, et laissez-vous séduire par l\'émotion que' +
+                ' seul un cabriolet peut procurer.',
+            index: '5'
+          }],
 
         marque: 'Volskswagen',
         modele: 'New Beatle',
