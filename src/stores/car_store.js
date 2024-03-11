@@ -256,10 +256,45 @@ export const car_store = defineStore('car', {
           ' n\'importe où.',
 
         prevention: 'Nous vous rapellons que ces voitures sont en locations sans chauffeur.',
-        titre1: '',
-        text1: '',
-        titre2: '',
-        text2: '',
+        titre1: 'Location limousine - Valenciennes',
+        titre2: 'Luxe et Prestige : Lincoln Town Car Limousine - L\'Élégance Redéfinie',
+
+        text: [
+          {
+            txt: 'Plongez dans le monde du luxe absolu avec la Lincoln Town Car Limousine. ' +
+                'Cette icône de l\'élégance et du raffinement incarne le summum du prestige ' +
+                'et du confort, offrant une expérience de voyage inoubliable à ses passagers.',
+            index: '1'
+          },
+          {
+            txt: 'Dotée d\'un puissant moteur V8, la Lincoln Town Car Limousine allie performance' +
+                ' et sophistication. Chaque trajet est une ode à la puissance, avec une conduite ' +
+                'souple et maîtrisée qui vous emmène en toute tranquillité vers votre destination.',
+            index: '2'
+          },
+          {
+            txt: 'À bord, le luxe atteint de nouveaux sommets. Avec ses neuf places, cette limousine ' +
+                'spacieuse offre un espace généreux pour vous et vos invités. L\'intérieur somptueux ' +
+                'en cuir assure un confort optimal, tandis que les équipements haut de gamme tels qu\'une ' +
+                'télévision, un bar et des finitions impeccables ajoutent une touche de luxe à chaque ' +
+                'instant passé à bord.',
+            index: '3'
+          },
+          {
+            txt: 'Que ce soit pour un mariage, un événement spécial ou une soirée entre amis, la ' +
+                'Lincoln Town Car Limousine vous garantit un voyage mémorable. Laissez-vous choyer' +
+                ' par le service attentif de notre chauffeur professionnel (ou non) pendant que vous vous détendez' +
+                ' dans le luxe absolu de cette voiture d\'exception.',
+            index: '3'
+          },
+          {
+            txt: 'Réservez dès maintenant votre Lincoln Town Car Limousine et préparez-vous à vivre ' +
+                'une expérience de voyage incomparable. Découvrez le mariage parfait entre le luxe, ' +
+                'le confort et la performance, et laissez-vous transporter dans un monde où chaque détail' +
+                ' est synonyme de prestige et d\'exclusivité.',
+            index: '4'
+          },
+          ],
 
         marque: 'Lincoln',
         modele: 'Towncar',
