@@ -125,7 +125,25 @@ export const car_store = defineStore('car', {
         modele: 'Mustang GT',
         moteur: 'V8 5,0 L 421cv',
         place: '4 places',
-        couleur: 'Noir et gris'
+        couleur: 'Noir et gris',
+
+        carousel: [
+            {
+              index: '1',
+              image: 'mustang/mustang.png'
+            },
+          {
+          index: '2',
+          image: 'mustang/mustang12.jpg'
+        },
+          {
+            index: '3',
+            image: 'mustang/mustang7.jpg'
+          },
+          {
+          index: '4',
+          image: 'mustang/mustang6.jpg'
+        }]
       },
       {
         name: 'Porsche boxster 986 - Valenciennes',
