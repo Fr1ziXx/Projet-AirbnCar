@@ -28,7 +28,7 @@ export const car_store = defineStore('car', {
         accroche:'',
         prix: '375€/jour',
         img: 'mustang/mustang.png',
-        img_detoure:'mustang/mustang.png',
+        img_detoure:'mustang/mustang_retoucher.png',
         desc_offre: 'La Ford Mustang GT Pack V8 5.0 de 2014 est l\'incarnation ultime de la puissance ' +
           'américaine sur quatre roues. Avec son moteur V8 5.0 litres sous le capot, cette icône ' +
           'de l\'automobile offre une expérience inoubliable .Si vous recherchez une voiture qui ' +
@@ -41,9 +41,6 @@ export const car_store = defineStore('car', {
         couleur:'Noir et gris',
       },
       {
-
-        
-
         name: 'Porsche boxster 986',
         accroche:'',
         prix: '277€/jour',
@@ -63,7 +60,7 @@ export const car_store = defineStore('car', {
         accroche:'',
         prix: '100€/jour',
         img: 'newBeatle/newBeatle.png',
-        img_detoure:'voiture1/voiture1p0.png',
+        img_detoure:'newBeatle/newBeatle_retoucher.png',
         desc_offre: 'La sublime New Beetle cabriolet de chez Volkswagen vous permettra de sillonner' +
           ' les routes de la région. Ce véhicule vous offrira le plaisir du cabriolet lors des ' +
           'journées les plus ensoleillées. Son moteur diesel de 105 chevaux vous permettra de' +

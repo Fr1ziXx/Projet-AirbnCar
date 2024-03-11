@@ -1,6 +1,4 @@
 <script>
-  import { useQuasar } from 'quasar'
-  import {axios}from 'axios '
 
 
 
