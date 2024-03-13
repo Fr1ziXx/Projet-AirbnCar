@@ -1,3 +1,42 @@
+<script>
+import axios from 'axios';
+
+export default {
+  data() {
+    return {
+      Nom: '',
+      Prenom: '',
+      Email: '',
+      MotdePasse: '',
+      CMotdePasse: '',
+      ville: ''
+    };
+  },
+  methods: {
+    enregistrer() {
+      const formData = {
+        Nom: this.Nom,
+        Prenom: this.Prenom,
+        Email: this.Email,
+        MotdePasse: this.MotdePasse,
+        CMotdePasse: this.CMotdePasse,
+        ville: this.ville
+      };
+
+      axios.post('page_inscription.php', formData)
+        .then(response => {
+          console.log(response.data);
+
+        })
+        .catch(error => {
+          console.error(error);
+
+        });
+    }
+  }
+};
+</script>
+
 <template>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <section class="row justify-center">
@@ -52,44 +91,7 @@
   </section> 
 </template>
 
-<script>
-import axios from 'axios';
 
-export default {
-  data() {
-    return {
-      Nom: '',
-      Prenom: '',
-      Email: '',
-      MotdePasse: '',
-      CMotdePasse: '',
-      ville: ''
-    };
-  },
-  methods: {
-    enregistrer() {
-      const formData = {
-        Nom: this.Nom,
-        Prenom: this.Prenom,
-        Email: this.Email,
-        MotdePasse: this.MotdePasse,
-        CMotdePasse: this.CMotdePasse,
-        ville: this.ville
-      };
-
-      axios.post('page_inscription.php', formData)
-        .then(response => {
-          console.log(response.data);
-         
-        })
-        .catch(error => {
-          console.error(error);
-         
-        });
-    }
-  }
-};
-</script>
 
 <style scoped lang="sass">
 .container
