@@ -1,13 +1,33 @@
 <script>
+import axios from 'axios';
+
 export default {
   data() {
     return {
-      Email:"",
-      MotdePasse:""
+      Email: "",
+      MotdePasse: ""
+    };
+  },
+  methods: {
+    connecter() {
+      const formData = {
+        Email: this.Email,
+        MotdePasse: this.MotdePasse
+      };
+
+      axios.post('conect.php', formData)
+        .then(response => {
+          console.log(response.data);
+          
+        })
+        .catch(error => {
+          console.error(error);
+          
+        });
     }
   },
   created() {
-    window.scrollTo({top: 0});
+    window.scrollTo({ top: 0 });
   }
 }
 </script>
@@ -31,15 +51,13 @@ export default {
           </q-avatar>
         </template>
       </q-input>
-      <q-btn rounded color="white" text-color="black" label="Se connecter" type="submit" style="width: 200px; height: 50px; font-weight: bold;" class="q-mt-xl q-mb-md volkorn" to="/"/>
+      <q-btn @click="connecter" rounded color="white" text-color="black" label="Se connecter" style="width: 200px; height: 50px; font-weight: bold;" class="q-mt-xl q-mb-md volkorn" />
       <p>Pas encore de compte ? <b @click="$router.push('/inscription')" class="cursor-pointer">Inscrivez vous !</b></p>
     </q-card>
   </section>
 </template>
 
-
 <style scoped lang="sass">
-
 .container
   background-color: $negative !important
   border-radius: 7px
