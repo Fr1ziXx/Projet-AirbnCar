@@ -90,15 +90,17 @@ export default {
     </section>
   </template>
   
-  <style scoped lang="sass">
-  .container
-    background-color: $negative !important
-    border-radius: 7px
-    margin-top: 100px
-    min-height: 300px
-  h6
-    margin-bottom: -30px
-  </style>
+<style scoped lang="sass">
+
+.container
+  background-color: $negative !important
+  border-radius: 7px
+  margin-top: 100px
+  min-height: 300px
+
+h6
+  margin-bottom: -30px
+</style>
   
   
   
