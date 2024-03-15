@@ -9,7 +9,13 @@ export default {
     }
   },
   created() {
-    window.scrollTo({top: 0});
+    this.init()
+  },
+
+  methods: {
+    init() {
+      window.scrollTo({top: 0});
+    }
   }
 }
 </script>

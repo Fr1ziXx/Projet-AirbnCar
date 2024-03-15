@@ -20,12 +20,11 @@ export default {
   <q-layout view="hHh Lpr lff">
     <q-header elevated>
       <q-toolbar>
-        <q-img width="60px" src="picture/Logo.png" @click="$router.push('/')" />
+        <q-img width="60px" src="picture/Logo.png" @click="$router.push('/')" class="cursor-pointer" />
         <q-toolbar-title>Airb&Car</q-toolbar-title>
 
         <q-tabs style="height: 60px">
           <q-route-tab name="vehicule" label="Vehicules" to="/vehicules" class="text-italic" />
-          <q-route-tab name="apropos" label="A Propos" to="" class="text-italic" />
           <q-route-tab name="connecter" label="Se connecter" to="/connection" class="text-italic" />
         </q-tabs>
         <q-btn @click="$q.dark.toggle" flat rounded>
