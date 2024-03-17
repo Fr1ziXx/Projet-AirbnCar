@@ -46,7 +46,7 @@ export default {
         rectification et de suppression
         de ces données ainsi que d’un droit de vous opposer à ce que ces données fassent l'objet d'un traitement en nous
         contactant par courrier
-        à l’adresse suivante : adresse airBnCar ou par e-mail à l’adresse adresse mail ariBnCar.
+        à l’adresse suivante : adresse airBnCar ou par e-mail à l’adresse adresse mail aribncar@gmail.com.
       </p>
       <p>
         Vos demandes devront être signées et accompagnées de la photocopie d’un titre d’identité portant la signature du
@@ -60,7 +60,7 @@ export default {
         faculté de revenir
         sur cette décision, soit en cliquant sur le lien prévu à cet effet en bas des mails que vous recevez, soit en
         envoyant un mail avec
-        pour objet « désabonnement » à l’adresse suivante : adresse mail airBnCar
+        pour objet « désabonnement » à l’adresse suivante : adresse mail airBnCar@gmail.com
       </p>
       <p>
         2.2 Conformément à l’article 6 de la Loi du 21 juin 2004 pour la confiance en l’économie numérique, l'hébergeur
@@ -78,12 +78,12 @@ export default {
       </p>
       <h5>Art. 4 Contenu du Site</h5>
       <p>
-        LB Prestacar, l’hébergeur et, plus généralement, toute société contribuant à la conception, à la réalisation et
+        AirbnCar, l’hébergeur et, plus généralement, toute société contribuant à la conception, à la réalisation et
         à la mise en ligne de ce Site s’efforcent
         d’assurer l’exactitude et la mise à jour régulière des informations diffusées sur ce Site. AirBnCar et les
         prestataires précités se réservent le droit de
         corriger et modifier à tout moment le contenu du Site sans que leur responsabilité puisse être engagée de ce
-        fait, LB Prestacar pouvant apporter à tout
+        fait, AirbnCar pouvant apporter à tout
         moment des améliorations et/ou changements au(x) produit(s) décrits sur ce Site.
       </p>
       <p>

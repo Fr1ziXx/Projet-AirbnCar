@@ -44,9 +44,9 @@ export default {
     <q-footer elevated class="column q-pa-xl">
       <aside class="row justify-between q-pa-md">
         <q-tabs dense>
-          <a href="https://www.facebook.com" class="fa fa-facebook"/>
+          <a href="https://www.facebook.com/profile.php?id=61557219910843" class="fa fa-facebook"/>
           <a href="https://twitter.com" class="fa fa-twitter"/>
-          <a href="https://www.instagram.com" class="fa fa-instagram"/>
+          <a href="https://www.instagram.com/airbncar/" class="fa fa-instagram"/>
           <a href="https://github.com/Fr1ziXx/Projet-AirbnCar" class="fa fa-github"/>
           <a href="https://www.twitch.tv/mvpi59" class="fa fa-twitch"/>
         </q-tabs>
