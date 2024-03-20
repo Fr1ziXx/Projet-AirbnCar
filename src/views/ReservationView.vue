@@ -61,7 +61,7 @@ export default {
         Dfin: this.model.to 
       };
 
-      axios.post('reservation.php', formData)
+      axios.post('/home/airbncn/www/reservation.php', formData)
         .then(response => {
           console.log(response.data);
           
