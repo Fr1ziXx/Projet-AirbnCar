@@ -29,6 +29,63 @@
   </section>
 </template>
 
+<script>
+import axios from 'axios';
+import { car_store } from '@/stores/car_store';
+import { ref } from 'vue';
+
+export default {
+  data() {
+    return {
+      model: ref({ from: '2020/07/08', to: '2020/07/17' }),
+      car: null,
+      store: car_store(),
+      modele: '',
+      Ddebut: '',
+      Dfin: ''
+    };
+  },
+  created() {
+    this.init(this.$route.params.IDvoiture);
+  },
+  methods: {
+    init(ID) {
+      this.car = this.store.carList[ID];
+      window.scrollTo({ top: 0 });
+    },
+    enregistrer() {
+      const formData = {
+        modele: this.car.name, // Utilisation de this.car.name pour le modèle
+        Ddebut: this.model.from, // Utilisation de this.model.from pour la date de début
+        Dfin: this.model.to // Utilisation de this.model.to pour la date de fin
+      };
+
+      axios.post('reservation2.php', formData)
+        .then(response => {
+          console.log(response.data);
+          // Traiter la réponse si nécessaire
+        })
+        .catch(error => {
+          console.error(error);
+          // Traiter l'erreur si nécessaire
+        });
+    }
+  }
+};
+</script>
+
+<style scoped lang="sass">
+.container
+  background-color: $negative !important
+  border-radius: 7px
+  margin-top: 100px
+  min-height: 300px
+
+h6
+  margin-bottom: -30px
+</style>
+
+
 
 
 
