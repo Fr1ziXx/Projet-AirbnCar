@@ -61,7 +61,7 @@ export default {
         Dfin: this.model.to 
       };
 
-      axios.post('reservation2.php', formData)
+      axios.post('reservation.php', formData)
         .then(response => {
           console.log(response.data);
           
