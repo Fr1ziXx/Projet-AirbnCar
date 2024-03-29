@@ -1,5 +1,11 @@
 # Projet AirB&Car
 
+AirbnCar est notre projet de fin de licence 3 informatique , c'est un site de location de voiture permetant à un utilisateur de se créé un compte , de voir la liste de véhicules et de les réserver. 
+
+Ce site a été devolopper en vue.js, saas , quasar.css et php.
+
+
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
